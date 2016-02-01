@@ -13,16 +13,16 @@ Gelato
 	|	|	|	|--file_operator.rb
 	|	|	|	|--regexp_operator.rb
 	|	|	|	|--logger_operator.rb
-	|	|	|	|--timestampe_operator.rb
+	|	|	|	|--timestamp_operator.rb
 	|	|	|--configuration.rb
 	|	|	|--data_storage.rb
 	|	|	|--pattern.rb
 	|	|	|--flavour.rb
 	|	|	|--file_parser.rb
 	|	|	|--input_file.rb
-	| | |--main.rb
-	| | |--opt_parser.rb
-	| | |--pattern.rb
+	|	|	|--main.rb
+	|	|	|--opt_parser.rb
+	|	|	|--pattern.rb
 	|	|--controller/
 	|	|	|--IGNORE THIS DIRECTORY FOR NOW
 	|--test/
