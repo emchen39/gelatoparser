@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "load_machine" : "regexp(1)=\\[Gelato\\] CIM_SERVER: (.+)",
+    "sut_machine" : "regexp(1)=\\[Gelato\\] LOAD_SERVER: (.+)",
+    "start_time" : "regexp(1)=Start Time: (.+)",
+    "test_name" : "regexp(1)=Test: (.+)",
+    "branch" : "regexp(1)=\\[Gelato\\] SCENARIO_BRANCH: (.+)",
+    "analysis" : "regexp(1)=Scenario Analysis version '(.+)'"
+  },
+
+	"flavours": {
+		"commit_phases" : {
+      "identifiers" : {
+        "concurrent" : "regexp(1)=Starting concurrent commit: (\\d+)",
+				"run" : "regexp(1)=Starting Reference Commit: (\\d+)",
+        "duration" : "regexp(1)=\\[(\\d+) elapsed\\].+\\[STATUS\\]",
+        "phase" : "regexp(1)=Committing \\d+ (.+)\\.\\.\\."
+      },
+
+      "triggers" : {
+        "count" : "regexp(1)=Committing (\\d+) .+\\.\\.\\."
+      }
+		},
+
+		"commit": {
+			"identifiers" : {
+        "concurrent" : "regexp(1)=Starting concurrent commit: (\\d+)",
+				"run" : "regexp(1)=Starting Reference Commit: (\\d+)"
+ 			},
+
+      "triggers" : {
+        "elapsed" : "regexp(1)=Elapsed time: (.+)"
+      }
+    }
+	}
+}

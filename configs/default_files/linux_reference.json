@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "load_machine" : "regexp(1)=\\[Gelato\\] CIM_SERVER: (.+)",
+    "sut_machine" : "regexp(1)=\\[Gelato\\] LOAD_SERVER: (.+)",
+    "start_time" : "regexp(1)=Start Time: (.+)",
+    "test_name" : "regexp(1)=Test: (.+)",
+    "branch" : "regexp(1)=\\[Gelato\\] SCENARIO_BRANCH: (.+)",
+    "analysis" : "regexp(1)=Scenario Analysis version '(.+)'"
+  },
+
+
+  "flavours" : {
+    "cov-emit" : {
+      "triggers" :  {
+        "duration" : "regexp(1)=cov-emit phase: (\\d+) seconds"
+      }
+    },
+
+    "cov-analyze" :{
+      "identifiers" : {
+        "duration" : "regexp(1)=cov-analyze: (\\d+) seconds",
+        "LOC" : "regexp(1)=LOC: (\\d+)",
+        "functions" : "regexp(1)=Functions: (\\d+)",
+        "files" : "regexp(1)=Files: (\\d+)"
+      },
+
+      "triggers" : {
+        "defects" : "regexp(1)=Defects: (\\d+)"
+      }
+    },
+
+    "checkers" : {
+      "identifiers": {
+        "name" : "regexp(1)=Checker (.+?):"
+      },
+
+      "triggers" : {
+        "count": "regexp(1)=Checker .+: (\\d+)"
+      }
+    },
+
+		"commit_phases" : {
+			"identifiers" : {
+				"duration" : "regexp(1)=\\[(\\d+) elapsed\\].+\\[STATUS\\]",
+				"phase" : "regexp(1)=Committing \\d+ (.+)\\.\\.\\."
+			},
+
+			"triggers" : {
+				"count" : "regexp(1)=Committing (\\d+) .+\\.\\.\\."
+			}
+		},
+
+		"cov-commit": {
+			"triggers" : {
+				"duration" : "regexp(1)=Elapsed time: (.+)"
+			}
+		}
+  }
+}

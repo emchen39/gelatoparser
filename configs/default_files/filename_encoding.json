@@ -1,0 +1,23 @@
+{
+  "metadata": {
+  	"load_machine" : "regexp(1)=\\[Gelato\\] CIM_SERVER: (.+)",
+    "sut_machine" : "regexp(1)=\\[Gelato\\] LOAD_SERVER: (.+)",
+    "start_time" : "regexp(1)=Start Time: (.+)",
+    "test_name" : "regexp(1)=Test: (.+)",
+    "branch" : "regexp(1)=\\[Gelato\\] SCENARIO_BRANCH: (.+)",
+    "analysis" : "regexp(1)=Scenario Analysis version '(.+)'",
+    "asset" : "regexp(1)=\\[Gelato\\] ASSET: (.+)"
+  },
+
+  "flavours" : {
+    "wall_time" : {
+      "identifiers" : {
+        "command" : "regexp(1)=Command being timed: .(.+)."
+      },
+
+      "triggers" : {
+        "duration": "regexp(1)=Elapsed \\(wall clock\\) time \\(h:mm:ss or m:ss\\): (.+)"
+      }
+    }
+  }
+}

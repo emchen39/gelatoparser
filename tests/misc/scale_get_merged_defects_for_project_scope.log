@@ -1,0 +1,1338 @@
+RUNNING TEST: ./scale_get_merged_defects_for_project_scope
+13:25:21 ### chdir /home/qatest_local/repo/scenario
+13:25:21 ### chdir /home/qatest_local/repo/scenario/tests/cim/performance/ws
+13:25:21 'latest' symbolic linked to the results path /home/qatest_local/results/2015-06-15_132521.
+13:25:21 Host: load2
+13:25:21 User: qatest_local
+13:25:21 Platform: ubuntu12.04-64
+13:25:21 Command Line: /home/qatest_local/repo/sts/bin/stsrun -o license=v8 -P -k analysis-7.6.1.5 -v ./scale_get_merged_defects_for_project_scope/sts.pl
+13:25:21 DNS Servers: 172.16.10.10, 10.0.0.253, 10.0.0.221
+13:25:21 ### Verifying STS startup environment
+13:25:21 Kit: analysis-7.6.1.5
+13:25:21 Started at: 2015-06-15 20:25:21 UTC
+13:25:21 /usr/bin/gcc --version
+13:25:21 gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
+13:25:21 Copyright (C) 2011 Free Software Foundation, Inc.
+13:25:21 This is free software; see the source for copying conditions.  There is NO
+13:25:21 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+13:25:21 
+13:25:21 Compiler Name: gcc
+13:25:21 Compiler: gcc
+13:25:21 Looking for tests in: /home/qatest_local/repo/scenario
+13:25:21 Tests: ./scale_get_merged_defects_for_project_scope/sts.pl
+13:25:21 Starting environment:
+13:25:21 ENV CCOMP=gcc
+13:25:21 ENV CCOMPFLAGS=-c
+13:25:21 ENV CCOMPTYPE=gcc
+13:25:21 ENV CCOMPVERSION=4.6.3
+13:25:21 ENV CC_DIALECT_FLAGS=-ansi|-std=c89|-std=c99|-std=c11|-std=gnu89|-std=gnu99|-std=gnu11
+13:25:21 ENV CIMAUTOMATION_JAR=/home/qatest_local/assets/cimautomation-harmony-SNAPSHOT.jar
+13:25:21 ENV CIM_SERVER=lin2
+13:25:21 ENV COVERITY_CONFIG=/tmp/stscovcfg.8908
+13:25:21 ENV COVERITY_DISABLE_SSL=1
+13:25:21 ENV CVSROOT=:pserver:luxoft@offshore.coverity.com:/home/coverity/qa-repository
+13:25:21 ENV CWINSPEC=gcc
+13:25:21 ENV CXXCOMP=g++
+13:25:21 ENV CXXCOMPFLAGS=-c
+13:25:21 ENV CXXCOMPTYPE=g++
+13:25:21 ENV CXXWINSPEC=g++
+13:25:21 ENV CXX_DIALECT_FLAGS=-std=c++98|-std=c++0x|-std=c++11|-std=c++1y|-std=gnu++98|-std=gnu++0x|-std=gnu++11|-std=gnu++1y|-std=c++14|-std=gnu++14
+13:25:21 ENV GCC_VERSION=4.6.3
+13:25:21 ENV HOME=/home/qatest_local
+13:25:21 ENV LANG=en_US.UTF-8
+13:25:21 ENV LESSCLOSE=/usr/bin/lesspipe %s %s
+13:25:21 ENV LESSOPEN=| /usr/bin/lesspipe %s
+13:25:21 ENV LOGNAME=qatest_local
+13:25:21 ENV LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+13:25:21 ENV MAIL=/var/mail/qatest_local
+13:25:21 ENV MAIN_CLASS=org.testng.TestNG
+13:25:21 ENV PATH=/usr/bin:/home/qatest_local/repo/sts/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games
+13:25:21 ENV PERLLIB=:/home/qatest_local/repo/sts/lib:/home/qatest_local/repo/scenario/lib:/home/qatest_local/repo/sts/lib:/home/qatest_local/repo/scenario/lib
+13:25:21 ENV PWD=/home/qatest_local/repo/scenario/tests/cim/performance/ws
+13:25:21 ENV RESPONSE_FILE_FLAG=@
+13:25:21 ENV SHELL=/bin/bash
+13:25:21 ENV SHLVL=3
+13:25:21 ENV SSH_CLIENT=172.16.10.10 36915 22
+13:25:21 ENV SSH_CONNECTION=172.16.10.10 36915 172.16.10.32 22
+13:25:21 ENV SSH_TTY=/dev/pts/2
+13:25:21 ENV STSSH=/bin/bash
+13:25:21 ENV STS_BUNZIP2=/bin/bunzip2
+13:25:21 ENV STS_CACHE=/home/qatest_local/.sts/cache
+13:25:21 ENV STS_CACHE_KITS=/home/qatest_local/.sts/cache/kits
+13:25:21 ENV STS_CACHE_LICENSES=/home/qatest_local/.sts/cache/licenses
+13:25:21 ENV STS_CACHE_PACKAGES=/home/qatest_local/.sts/cache/packages
+13:25:21 ENV STS_CACHE_QATOOLS=/home/qatest_local/.sts/cache/qatools
+13:25:21 ENV STS_COMPILER=gcc
+13:25:21 ENV STS_COMPILER_NAME=gcc
+13:25:21 ENV STS_COMPILER_TYPE=gcc
+13:25:21 ENV STS_COMPILER_VERSION=0
+13:25:21 ENV STS_COV_LICENSE_VERSION=v8
+13:25:21 ENV STS_EMAIL_CLEANUP=
+13:25:21 ENV STS_KIT_TYPE=zip
+13:25:21 ENV STS_MAX_CACHE_MB=1024
+13:25:21 ENV STS_MAX_CACHE_MB_KITS=1024
+13:25:21 ENV STS_MAX_CACHE_MB_LICENSES=1024
+13:25:21 ENV STS_MAX_CACHE_MB_PACKAGES=1024
+13:25:21 ENV STS_PRESERVE_OUTPUT=1
+13:25:21 ENV STS_RESULTS=/home/qatest_local/results/2015-06-15_132521
+13:25:21 ENV STS_REUSE_KITS=1
+13:25:21 ENV STS_ROOT=/home/qatest_local/repo/sts
+13:25:21 ENV STS_RUBY=/usr/bin/ruby
+13:25:21 ENV STS_RUN_NAME=
+13:25:21 ENV STS_TAR=/bin/tar
+13:25:21 ENV STS_TESTS=/home/qatest_local/repo/scenario
+13:25:21 ENV STS_USE_CIM_MANAGE=1
+13:25:21 ENV STY=5296.ws-test-running
+13:25:21 ENV TARGET_BRANCH=harmony
+13:25:21 ENV TERM=screen
+13:25:21 ENV TERMCAP=SC|screen|VT 100/ANSI X3.64 virtual terminal:\
+	:DO=\E[%dB:LE=\E[%dD:RI=\E[%dC:UP=\E[%dA:bs:bt=\E[Z:\
+	:cd=\E[J:ce=\E[K:cl=\E[H\E[J:cm=\E[%i%d;%dH:ct=\E[3g:\
+	:do=^J:nd=\E[C:pt:rc=\E8:rs=\Ec:sc=\E7:st=\EH:up=\EM:\
+	:le=^H:bl=^G:cr=^M:it#8:ho=\E[H:nw=\EE:ta=^I:is=\E)0:\
+	:li#50:co#180:am:xn:xv:LP:sr=\EM:al=\E[L:AL=\E[%dL:\
+	:cs=\E[%i%d;%dr:dl=\E[M:DL=\E[%dM:dc=\E[P:DC=\E[%dP:\
+	:im=\E[4h:ei=\E[4l:mi:IC=\E[%d@:ks=\E[?1h\E=:\
+	:ke=\E[?1l\E>:vi=\E[?25l:ve=\E[34h\E[?25h:vs=\E[34l:\
+	:ti=\E[?1049h:te=\E[?1049l:us=\E[4m:ue=\E[24m:so=\E[3m:\
+	:se=\E[23m:mb=\E[5m:md=\E[1m:mr=\E[7m:me=\E[m:ms:\
+	:Co#8:pa#64:AF=\E[3%dm:AB=\E[4%dm:op=\E[39;49m:AX:\
+	:vb=\Eg:G0:as=\E(0:ae=\E(B:\
+	:ac=\140\140aaffggjjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~..--++,,hhII00:\
+	:po=\E[5i:pf=\E[4i:k0=\E[10~:k1=\EOP:k2=\EOQ:k3=\EOR:\
+	:k4=\EOS:k5=\E[15~:k6=\E[17~:k7=\E[18~:k8=\E[19~:\
+	:k9=\E[20~:k;=\E[21~:F1=\E[23~:F2=\E[24~:F3=\E[1;2P:\
+	:F4=\E[1;2Q:F5=\E[1;2R:F6=\E[1;2S:F7=\E[15;2~:\
+	:F8=\E[17;2~:F9=\E[18;2~:FA=\E[19;2~:kb=:K2=\EOE:\
+	:kB=\E[Z:kF=\E[1;2B:kR=\E[1;2A:*4=\E[3;2~:*7=\E[1;2F:\
+	:#2=\E[1;2H:#3=\E[2;2~:#4=\E[1;2D:%c=\E[6;2~:%e=\E[5;2~:\
+	:%i=\E[1;2C:kh=\E[1~:@1=\E[1~:kH=\E[4~:@7=\E[4~:\
+	:kN=\E[6~:kP=\E[5~:kI=\E[2~:kD=\E[3~:ku=\EOA:kd=\EOB:\
+	:kr=\EOC:kl=\EOD:km:
+13:25:21 ENV TEST_NUMB=3
+13:25:21 ENV USER=qatest_local
+13:25:21 ENV WINDOW=1
+13:25:21 ENV XDG_SESSION_COOKIE=2ce4840335d7d5c8b6c215e8000002a8-1433349615.371358-1024300632
+13:25:21 ENV _=/home/qatest_local/repo/sts/bin/stsrun
+13:25:21 Platform: linux64
+13:25:21 Kit: product='analysis' version='7.6.1.5'
+13:25:21 ### Attempting to create lock /home/qatest_local/.sts/cache/kits/cov-analysis-linux64-7.6.1.5.sh.lock
+13:25:21 wget --quiet -O "/home/qatest_local/.sts/cache/kits/cov-analysis-linux64-7.6.1.5.sh" http://stsfiles.sf.coverity.com/releases/cov-analysis-linux64-7.6.1.5.sh
+13:25:47 wget --quiet -O "/home/qatest_local/.sts/cache/kits/cov-analysis-linux64-7.6.1.5.sh.md5" http://stsfiles.sf.coverity.com/releases/cov-analysis-linux64-7.6.1.5.sh.md5
+13:25:53 ### Removed lock /home/qatest_local/.sts/cache/kits/cov-analysis-linux64-7.6.1.5.sh.lock
+13:25:54 ### Fetching license flat/v8/license.dat
+13:25:54 ### Attempting to create lock /home/qatest_local/.sts/cache/licenses/flat/v8/license.dat.lock
+13:25:54 wget --quiet -O "/home/qatest_local/.sts/cache/licenses/flat/v8/license.dat" http://stsfiles.sf.coverity.com/licenses/flat/v8/license.dat
+13:25:54 ### Removed lock /home/qatest_local/.sts/cache/licenses/flat/v8/license.dat.lock
+13:25:54 uname -r
+13:25:54 3.13.0-32-generic
+13:25:54 ### Setting COVERITY_COV_USER_DIR to '/home/qatest_local/results/2015-06-15_132521/.coverity'.
+13:25:54 '/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5.sh'  -Vlicense.dat=/home/qatest_local/results/2015-06-15_132521/license.dat -q -dir '/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5'
+13:25:54 Unpacking JRE ...
+13:25:55 Starting Installer ...
+13:25:57 The installation directory has been set to /tmp/stskits.8908/cov-analysis-linux64-7.6.1.5.
+13:25:57 Extracting files ...
+13:28:38 Finishing installation ...
+13:28:38 Copying /tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/.install4j to STS_RESULTS
+13:28:38 BZ 60334: archive_extract(outkit=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5.sh, location=/tmp/stskits.8908) returned success=true
+13:28:38 CIC: Configuring Dynamic Analysis...
+13:28:38 ### analysis kit version:
+
+externalVersion=7.6.1.5
+
+install4jVersion=install4jversion6.0.1(build6049),builton2015-01-15
+
+
+Installer Builder
+Wed May 13 13:35:19 2015 -0700
+commit caa889fc9ad206029c37cd2fb747ed8a1d33bf9d (HEAD, tag: ins-harmony-push-1112.75, origin/harmony) ins-harmony-push-1112.75
+
+cov-sa-c/c++-linux64-7.6.1.5
+2015-Jun-02 16:25:38
+Build number: 37ee640de9 p-harmony-push-21098.643
+
+cov-manage-im
+2015-05-11 09:11:21 -0700
+44521696b7e87ff18cf21e5370319e692f1bdd6f ws-harmony-push-603.26
+
+
+Dynamic Analyzer
+Mon May 11 09:10:19 2015 -0700
+commit 9d739762d9e64daf7aa8b68c8234a24d2bd6f30c (HEAD, tag: da-harmony-push-948.28, origin/harmony) da-harmony-push-948.28
+
+
+doc-7.6.1.5
+Mon Jun 1 09:31:14 2015 -0700
+commit 6e7dc9d4c609e70ab58fa42d68a4320efd668e14 (HEAD, tag: doc-harmony-push-7371.735, origin/harmony) doc-harmony-push-7371.735
+
+
+Eclipse plugin
+2015-05-11 09:12:05 -0700
+4de91fa95cc9e5a765d4f3ae086d8b57016cb245 eclipse-harmony-push-3455.109
+
+
+Architecture Analysis 7.6.5514
+13:28:38 ### STS::Kit::run_post_install_callbacks: running 'save_i4j_logs'
+13:28:38 ### Searching for i4j_log_ in /tmp
+13:28:38 ### Looking for i4j Logs in /tmp ###
+13:28:38 ### searching for stskits.8908 /tmp/i4j_log_*
+13:28:39 ### Found LOG: /tmp/i4j_log_analysis_3449329997301696042.log
+13:28:39 ### LOG: /tmp/i4j_log_analysis_3449329997301696042.log
+13:28:39 ### Copying '/tmp/i4j_log_analysis_3449329997301696042.log' to '/home/qatest_local/results/2015-06-15_132521'
+13:28:39 Copying '/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/.install4j' to '/home/qatest_local/results/2015-06-15_132521/logs/analysis'
+13:28:39 ### STS::Kit::run_post_install_callbacks: running 'save_postgres_logs'
+13:28:39 ### STS::Kit::run_post_install_callbacks: running 'save_platform_logs'
+13:28:39 Started test: scenario/environment
+13:28:39 Start Time: 2015-06-15 20:28:39 UTC
+13:28:39 Host: load2
+13:28:39 uname: Linux load2 3.13.0-32-generic #57~precise1-Ubuntu SMP Tue Jul 15 03:51:20 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+13:28:39 Directory: /home/qatest_local/results/2015-06-15_132521/scenario/environment
+13:28:39 Directory: /home/qatest_local/results/2015-06-15_132521/scenario/environment
+13:28:39 Test: scenario/environment
+13:28:39 Test file: /home/qatest_local/repo/scenario/tests/scenario/environment/sts.pl
+13:28:39 Test Version: unknown
+13:28:39 ENV CCOMP=gcc
+13:28:39 ENV CCOMPFLAGS=-c
+13:28:39 ENV CCOMPTYPE=gcc
+13:28:39 ENV CCOMPVERSION=4.6.3
+13:28:39 ENV CC_DIALECT_FLAGS=-ansi|-std=c89|-std=c99|-std=c11|-std=gnu89|-std=gnu99|-std=gnu11
+13:28:39 ENV COVDABUILDNAME=dynamic-analysis
+13:28:39 ENV COVDAHOME=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/dynamic-analysis
+13:28:39 ENV COVERITY_CONFIG=/tmp/stscovcfg.8908
+13:28:39 ENV COVERITY_COV_USER_DIR=/home/qatest_local/results/2015-06-15_132521/.coverity
+13:28:39 ENV COVERITY_DISABLE_SSL=1
+13:28:39 ENV COVEXTENDHOME=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk
+13:28:39 ENV COVEXTENDROOT=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk
+13:28:39 ENV COVSABUILDNAME=cov-analysis-linux64-7.6.1.5
+13:28:39 ENV COVSADATA=/home/qatest_local/results/2015-06-15_132521/sa_data
+13:28:39 ENV COVSAHOME=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5
+13:28:39 ENV COV_ANALYSIS_ROOT=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5
+13:28:39 ENV CURRENT_TEST=scenario/environment
+13:28:39 ENV CVSROOT=:pserver:luxoft@offshore.coverity.com:/home/coverity/qa-repository
+13:28:39 ENV CWINSPEC=gcc
+13:28:39 ENV CXXCOMP=g++
+13:28:39 ENV CXXCOMPFLAGS=-c
+13:28:39 ENV CXXCOMPTYPE=g++
+13:28:39 ENV CXXWINSPEC=g++
+13:28:39 ENV CXX_DIALECT_FLAGS=-std=c++98|-std=c++0x|-std=c++11|-std=c++1y|-std=gnu++98|-std=gnu++0x|-std=gnu++11|-std=gnu++1y|-std=c++14|-std=gnu++14
+13:28:39 ENV EXTEND_COMP_DIR=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk/compiler
+13:28:39 ENV EXTEND_HOME=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk
+13:28:39 ENV EXTEND_ROOT=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk
+13:28:39 ENV GCC_VERSION=4.6.3
+13:28:39 ENV PATH=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/bin:/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/dynamic-analysis/bin:/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/dynamic-analysis/dynamic-analysis/bin:/usr/bin:/home/qatest_local/repo/sts/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games
+13:28:39 ENV RESPONSE_FILE_FLAG=@
+13:28:39 ENV STSSH=/bin/bash
+13:28:39 ENV STS_BUNZIP2=/bin/bunzip2
+13:28:39 ENV STS_CACHE=/home/qatest_local/.sts/cache
+13:28:39 ENV STS_CACHE_KITS=/home/qatest_local/.sts/cache/kits
+13:28:39 ENV STS_CACHE_LICENSES=/home/qatest_local/.sts/cache/licenses
+13:28:39 ENV STS_CACHE_PACKAGES=/home/qatest_local/.sts/cache/packages
+13:28:39 ENV STS_CACHE_QATOOLS=/home/qatest_local/.sts/cache/qatools
+13:28:39 ENV STS_COMPILER=gcc
+13:28:39 ENV STS_COMPILER_NAME=gcc
+13:28:39 ENV STS_COMPILER_TYPE=gcc
+13:28:39 ENV STS_COMPILER_VERSION=0
+13:28:39 ENV STS_COV_LICENSE_VERSION=v8
+13:28:39 ENV STS_EMAIL_CLEANUP=
+13:28:39 ENV STS_INSTALL_DIR=/tmp/stskits.8908
+13:28:39 ENV STS_KIT_TYPE=zip
+13:28:39 ENV STS_MAX_CACHE_MB=1024
+13:28:39 ENV STS_MAX_CACHE_MB_KITS=1024
+13:28:39 ENV STS_MAX_CACHE_MB_LICENSES=1024
+13:28:39 ENV STS_MAX_CACHE_MB_PACKAGES=1024
+13:28:39 ENV STS_PRESERVE_OUTPUT=1
+13:28:39 ENV STS_RESULTS=/home/qatest_local/results/2015-06-15_132521
+13:28:39 ENV STS_REUSE_KITS=1
+13:28:39 ENV STS_ROOT=/home/qatest_local/repo/sts
+13:28:39 ENV STS_RUBY=/usr/bin/ruby
+13:28:39 ENV STS_RUN_NAME=
+13:28:39 ENV STS_TAR=/bin/tar
+13:28:39 ENV STS_TEST_SOURCE_DIR=/home/qatest_local/repo/scenario/tests/scenario/environment
+13:28:39 ENV STS_USE_CIM_MANAGE=1
+13:28:39 Description: Verify Scenario environment is complete and valid
+13:28:39 # Checking for gmake 3.81+ (set SKIP_GMAKE_TEST to disable)
+13:28:39 ### Expecting success
+13:28:39 make --version
+13:28:39 GNU Make 3.81
+13:28:39 Copyright (C) 2006  Free Software Foundation, Inc.
+13:28:39 This is free software; see the source for copying conditions.
+13:28:39 There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+13:28:39 PARTICULAR PURPOSE.
+13:28:39 
+13:28:39 This program built for x86_64-pc-linux-gnu
+13:28:39 ### Expecting success
+13:28:39 dpkg --list lsb | egrep -q "^ii +lsb +"
+13:28:39 SKIPPED: On success, do not count toward passing results
+13:28:39 End Time: 2015-06-15 20:28:39 UTC
+13:28:39 Duration: 00:00
+13:28:39 SKIPPED: On success, do not count toward passing results
+scenario/environment ................................................. skipped
+SKIPPED: On success, do not count toward passing results
+
+13:28:39 Started test: scale_get_merged_defects_for_project_scope/sts.pl
+13:28:39 Start Time: 2015-06-15 20:28:39 UTC
+13:28:39 Host: load2
+13:28:39 uname: Linux load2 3.13.0-32-generic #57~precise1-Ubuntu SMP Tue Jul 15 03:51:20 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+13:28:39 Directory: /home/qatest_local/results/2015-06-15_132521/scale_get_merged_defects_for_project_scope
+13:28:39 Directory: /home/qatest_local/results/2015-06-15_132521/scale_get_merged_defects_for_project_scope
+13:28:39 Test: scale_get_merged_defects_for_project_scope
+13:28:39 Test file: /home/qatest_local/repo/scenario/tests/cim/performance/ws/scale_get_merged_defects_for_project_scope/sts.pl
+13:28:39 Test Version: unknown
+13:28:39 ENV CCOMP=gcc
+13:28:39 ENV CCOMPFLAGS=-c
+13:28:39 ENV CCOMPTYPE=gcc
+13:28:39 ENV CCOMPVERSION=4.6.3
+13:28:39 ENV CC_DIALECT_FLAGS=-ansi|-std=c89|-std=c99|-std=c11|-std=gnu89|-std=gnu99|-std=gnu11
+13:28:39 ENV COVDABUILDNAME=dynamic-analysis
+13:28:39 ENV COVDAHOME=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/dynamic-analysis
+13:28:39 ENV COVERITY_CONFIG=/tmp/stscovcfg.8908
+13:28:39 ENV COVERITY_COV_USER_DIR=/home/qatest_local/results/2015-06-15_132521/.coverity
+13:28:39 ENV COVERITY_DISABLE_SSL=1
+13:28:39 ENV COVEXTENDHOME=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk
+13:28:39 ENV COVEXTENDROOT=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk
+13:28:39 ENV COVSABUILDNAME=cov-analysis-linux64-7.6.1.5
+13:28:39 ENV COVSADATA=/home/qatest_local/results/2015-06-15_132521/sa_data
+13:28:39 ENV COVSAHOME=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5
+13:28:39 ENV COV_ANALYSIS_ROOT=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5
+13:28:39 ENV CURRENT_TEST=scale_get_merged_defects_for_project_scope
+13:28:39 ENV CVSROOT=:pserver:luxoft@offshore.coverity.com:/home/coverity/qa-repository
+13:28:39 ENV CWINSPEC=gcc
+13:28:39 ENV CXXCOMP=g++
+13:28:39 ENV CXXCOMPFLAGS=-c
+13:28:39 ENV CXXCOMPTYPE=g++
+13:28:39 ENV CXXWINSPEC=g++
+13:28:39 ENV CXX_DIALECT_FLAGS=-std=c++98|-std=c++0x|-std=c++11|-std=c++1y|-std=gnu++98|-std=gnu++0x|-std=gnu++11|-std=gnu++1y|-std=c++14|-std=gnu++14
+13:28:39 ENV EXTEND_COMP_DIR=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk/compiler
+13:28:39 ENV EXTEND_HOME=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk
+13:28:39 ENV EXTEND_ROOT=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk
+13:28:39 ENV GCC_VERSION=4.6.3
+13:28:39 ENV PATH=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/bin:/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/dynamic-analysis/bin:/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/dynamic-analysis/dynamic-analysis/bin:/usr/bin:/home/qatest_local/repo/sts/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games
+13:28:39 ENV RESPONSE_FILE_FLAG=@
+13:28:39 ENV STSSH=/bin/bash
+13:28:39 ENV STS_BUNZIP2=/bin/bunzip2
+13:28:39 ENV STS_CACHE=/home/qatest_local/.sts/cache
+13:28:39 ENV STS_CACHE_KITS=/home/qatest_local/.sts/cache/kits
+13:28:39 ENV STS_CACHE_LICENSES=/home/qatest_local/.sts/cache/licenses
+13:28:39 ENV STS_CACHE_PACKAGES=/home/qatest_local/.sts/cache/packages
+13:28:39 ENV STS_CACHE_QATOOLS=/home/qatest_local/.sts/cache/qatools
+13:28:39 ENV STS_COMPILER=gcc
+13:28:39 ENV STS_COMPILER_NAME=gcc
+13:28:39 ENV STS_COMPILER_TYPE=gcc
+13:28:39 ENV STS_COMPILER_VERSION=0
+13:28:39 ENV STS_COV_LICENSE_VERSION=v8
+13:28:39 ENV STS_EMAIL_CLEANUP=
+13:28:39 ENV STS_INSTALL_DIR=/tmp/stskits.8908
+13:28:39 ENV STS_KIT_TYPE=zip
+13:28:39 ENV STS_MAX_CACHE_MB=1024
+13:28:39 ENV STS_MAX_CACHE_MB_KITS=1024
+13:28:39 ENV STS_MAX_CACHE_MB_LICENSES=1024
+13:28:39 ENV STS_MAX_CACHE_MB_PACKAGES=1024
+13:28:39 ENV STS_PRESERVE_OUTPUT=1
+13:28:39 ENV STS_RESULTS=/home/qatest_local/results/2015-06-15_132521
+13:28:39 ENV STS_REUSE_KITS=1
+13:28:39 ENV STS_ROOT=/home/qatest_local/repo/sts
+13:28:39 ENV STS_RUBY=/usr/bin/ruby
+13:28:39 ENV STS_RUN_NAME=
+13:28:39 ENV STS_TAR=/bin/tar
+13:28:39 ENV STS_TEST_SOURCE_DIR=/home/qatest_local/repo/scenario/tests/cim/performance/ws/scale_get_merged_defects_for_project_scope
+13:28:39 ENV STS_USE_CIM_MANAGE=1
+13:28:40 Snapshot latest CIM on test host
+13:28:40 ### Expecting success
+13:28:40 ssh qatest_local@lin2 "cd ~/repo/scenario/tests/sts/admin/cim-snapshot; export SNAPSHOT_BRANCH=harmony; ~/repo/sts/bin/stsrun -o license=v8 -v ./sts.pl"
+13:28:44 13:34:43 ### chdir /home/qatest_local/repo/scenario
+13:28:44 13:34:43 ### chdir /home/qatest_local/repo/scenario/tests/sts/admin/cim-snapshot
+13:28:44 13:34:43 'latest' symbolic linked to the results path /home/qatest_local/results/2015-06-15_133443.
+13:28:44 13:34:43 Host: lin2
+13:28:44 13:34:43 User: qatest_local
+13:28:44 13:34:43 Platform: ubuntu12.04-64
+13:28:44 13:34:43 Command Line: /home/qatest_local/repo/sts/bin/stsrun -o license=v8 -v ./sts.pl
+13:28:44 13:34:43 DNS Servers: 172.16.10.10, 10.0.0.253, 10.0.0.221
+13:28:44 13:34:43 ### Verifying STS startup environment
+13:28:44 13:34:43 Started at: 2015-06-15 20:34:43 UTC
+13:28:44 13:34:43 /usr/bin/gcc --version
+13:28:44 13:34:43 gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
+13:28:44 13:34:43 Copyright (C) 2011 Free Software Foundation, Inc.
+13:28:44 13:34:43 This is free software; see the source for copying conditions.  There is NO
+13:28:44 13:34:43 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+13:28:44 13:34:43 
+13:28:44 13:34:43 Compiler Name: gcc
+13:28:44 13:34:43 Compiler: gcc
+13:28:44 13:34:43 Looking for tests in: /home/qatest_local/repo/scenario
+13:28:44 13:34:43 Tests: ./sts.pl
+13:28:44 13:34:43 Starting environment:
+13:28:44 13:34:43 ENV CCOMP=gcc
+13:28:44 13:34:43 ENV CCOMPFLAGS=-c
+13:28:44 13:34:43 ENV CCOMPTYPE=gcc
+13:28:44 13:34:43 ENV CCOMPVERSION=4.6.3
+13:28:44 13:34:43 ENV CC_DIALECT_FLAGS=-ansi|-std=c89|-std=c99|-std=c11|-std=gnu89|-std=gnu99|-std=gnu11
+13:28:44 13:34:43 ENV COVERITY_CONFIG=/tmp/stscovcfg.20453
+13:28:44 13:34:43 ENV COVERITY_DISABLE_SSL=1
+13:28:44 13:34:43 ENV CVSROOT=:pserver:luxoft@offshore.coverity.com:/home/coverity/qa-repository
+13:28:44 13:34:43 ENV CWINSPEC=gcc
+13:28:44 13:34:43 ENV CXXCOMP=g++
+13:28:44 13:34:43 ENV CXXCOMPFLAGS=-c
+13:28:44 13:34:43 ENV CXXCOMPTYPE=g++
+13:28:44 13:34:43 ENV CXXWINSPEC=g++
+13:28:44 13:34:43 ENV CXX_DIALECT_FLAGS=-std=c++98|-std=c++0x|-std=c++11|-std=c++1y|-std=gnu++98|-std=gnu++0x|-std=gnu++11|-std=gnu++1y|-std=c++14|-std=gnu++14
+13:28:44 13:34:43 ENV GCC_VERSION=4.6.3
+13:28:44 13:34:43 ENV HOME=/home/qatest_local
+13:28:44 13:34:43 ENV LANG=en_US.UTF-8
+13:28:44 13:34:43 ENV LOGNAME=qatest_local
+13:28:44 13:34:43 ENV MAIL=/var/mail/qatest_local
+13:28:44 13:34:43 ENV OLDPWD=/home/qatest_local
+13:28:44 13:34:43 ENV PATH=/usr/bin:/home/qatest_local/repo/sts/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games
+13:28:44 13:34:43 ENV PWD=/home/qatest_local/repo/scenario/tests/sts/admin/cim-snapshot
+13:28:44 13:34:43 ENV RESPONSE_FILE_FLAG=@
+13:28:44 13:34:43 ENV SHELL=/bin/bash
+13:28:44 13:34:43 ENV SHLVL=1
+13:28:44 13:34:43 ENV SNAPSHOT_BRANCH=harmony
+13:28:44 13:34:43 ENV SSH_CLIENT=172.16.10.32 52726 22
+13:28:44 13:34:43 ENV SSH_CONNECTION=172.16.10.32 52726 172.16.10.24 22
+13:28:44 13:34:43 ENV STSSH=/bin/bash
+13:28:44 13:34:43 ENV STS_BUNZIP2=/bin/bunzip2
+13:28:44 13:34:43 ENV STS_CACHE=/home/qatest_local/.sts/cache
+13:28:44 13:34:43 ENV STS_CACHE_KITS=/home/qatest_local/.sts/cache/kits
+13:28:44 13:34:43 ENV STS_CACHE_LICENSES=/home/qatest_local/.sts/cache/licenses
+13:28:44 13:34:43 ENV STS_CACHE_PACKAGES=/home/qatest_local/.sts/cache/packages
+13:28:44 13:34:43 ENV STS_CACHE_QATOOLS=/home/qatest_local/.sts/cache/qatools
+13:28:44 13:34:43 ENV STS_COMPILER=gcc
+13:28:44 13:34:43 ENV STS_COMPILER_NAME=gcc
+13:28:44 13:34:43 ENV STS_COMPILER_TYPE=gcc
+13:28:44 13:34:43 ENV STS_COMPILER_VERSION=0
+13:28:44 13:34:43 ENV STS_COV_LICENSE_VERSION=v8
+13:28:44 13:34:43 ENV STS_EMAIL_CLEANUP=
+13:28:44 13:34:43 ENV STS_KIT_TYPE=zip
+13:28:44 13:34:43 ENV STS_MAX_CACHE_MB=1024
+13:28:44 13:34:43 ENV STS_MAX_CACHE_MB_KITS=1024
+13:28:44 13:34:43 ENV STS_MAX_CACHE_MB_LICENSES=1024
+13:28:44 13:34:43 ENV STS_MAX_CACHE_MB_PACKAGES=1024
+13:28:44 13:34:43 ENV STS_RESULTS=/home/qatest_local/results/2015-06-15_133443
+13:28:44 13:34:43 ENV STS_REUSE_KITS=1
+13:28:44 13:34:43 ENV STS_ROOT=/home/qatest_local/repo/sts
+13:28:44 13:34:43 ENV STS_RUBY=/usr/bin/ruby
+13:28:44 13:34:43 ENV STS_RUN_NAME=
+13:28:44 13:34:43 ENV STS_TAR=/bin/tar
+13:28:44 13:34:43 ENV STS_TESTS=/home/qatest_local/repo/scenario
+13:28:44 13:34:43 ENV STS_USE_CIM_MANAGE=1
+13:28:44 13:34:43 ENV USER=qatest_local
+13:28:44 13:34:43 ENV XDG_SESSION_COOKIE=409e2b402e97e9cb0f32a8b200000482-1434400479.974809-1158662081
+13:28:44 13:34:43 ENV _=/home/qatest_local/repo/sts/bin/stsrun
+13:28:44 13:34:43 Started test: scenario/environment
+13:28:44 13:34:43 Start Time: 2015-06-15 20:34:43 UTC
+13:28:44 13:34:43 Host: lin2
+13:28:44 13:34:43 uname: Linux lin2 3.13.0-32-generic #57~precise1-Ubuntu SMP Tue Jul 15 03:51:20 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+13:28:44 13:34:43 Directory: /home/qatest_local/results/2015-06-15_133443/scenario/environment
+13:28:44 13:34:43 Directory: /home/qatest_local/results/2015-06-15_133443/scenario/environment
+13:28:44 13:34:43 Test: scenario/environment
+13:28:44 13:34:43 Test file: /home/qatest_local/repo/scenario/tests/scenario/environment/sts.pl
+13:28:44 13:34:43 Test Version: unknown
+13:28:44 13:34:43 ENV CCOMP=gcc
+13:28:44 13:34:43 ENV CCOMPFLAGS=-c
+13:28:44 13:34:43 ENV CCOMPTYPE=gcc
+13:28:44 13:34:43 ENV CCOMPVERSION=4.6.3
+13:28:44 13:34:43 ENV CC_DIALECT_FLAGS=-ansi|-std=c89|-std=c99|-std=c11|-std=gnu89|-std=gnu99|-std=gnu11
+13:28:44 13:34:43 ENV COVERITY_CONFIG=/tmp/stscovcfg.20453
+13:28:44 13:34:43 ENV COVERITY_DISABLE_SSL=1
+13:28:44 13:34:43 ENV CURRENT_TEST=scenario/environment
+13:28:44 13:34:43 ENV CVSROOT=:pserver:luxoft@offshore.coverity.com:/home/coverity/qa-repository
+13:28:44 13:34:43 ENV CWINSPEC=gcc
+13:28:44 13:34:43 ENV CXXCOMP=g++
+13:28:44 13:34:43 ENV CXXCOMPFLAGS=-c
+13:28:44 13:34:43 ENV CXXCOMPTYPE=g++
+13:28:44 13:34:43 ENV CXXWINSPEC=g++
+13:28:44 13:34:43 ENV CXX_DIALECT_FLAGS=-std=c++98|-std=c++0x|-std=c++11|-std=c++1y|-std=gnu++98|-std=gnu++0x|-std=gnu++11|-std=gnu++1y|-std=c++14|-std=gnu++14
+13:28:44 13:34:43 ENV GCC_VERSION=4.6.3
+13:28:44 13:34:43 ENV PATH=/usr/bin:/home/qatest_local/repo/sts/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games
+13:28:44 13:34:43 ENV RESPONSE_FILE_FLAG=@
+13:28:44 13:34:43 ENV STSSH=/bin/bash
+13:28:44 13:34:43 ENV STS_BUNZIP2=/bin/bunzip2
+13:28:44 13:34:43 ENV STS_CACHE=/home/qatest_local/.sts/cache
+13:28:44 13:34:43 ENV STS_CACHE_KITS=/home/qatest_local/.sts/cache/kits
+13:28:44 13:34:43 ENV STS_CACHE_LICENSES=/home/qatest_local/.sts/cache/licenses
+13:28:44 13:34:43 ENV STS_CACHE_PACKAGES=/home/qatest_local/.sts/cache/packages
+13:28:44 13:34:43 ENV STS_CACHE_QATOOLS=/home/qatest_local/.sts/cache/qatools
+13:28:44 13:34:43 ENV STS_COMPILER=gcc
+13:28:44 13:34:43 ENV STS_COMPILER_NAME=gcc
+13:28:44 13:34:43 ENV STS_COMPILER_TYPE=gcc
+13:28:44 13:34:43 ENV STS_COMPILER_VERSION=0
+13:28:44 13:34:43 ENV STS_COV_LICENSE_VERSION=v8
+13:28:44 13:34:43 ENV STS_EMAIL_CLEANUP=
+13:28:44 13:34:43 ENV STS_INSTALL_DIR=/tmp/stskits.20453
+13:28:44 13:34:43 ENV STS_KIT_TYPE=zip
+13:28:44 13:34:43 ENV STS_MAX_CACHE_MB=1024
+13:28:44 13:34:43 ENV STS_MAX_CACHE_MB_KITS=1024
+13:28:44 13:34:43 ENV STS_MAX_CACHE_MB_LICENSES=1024
+13:28:44 13:34:43 ENV STS_MAX_CACHE_MB_PACKAGES=1024
+13:28:44 13:34:43 ENV STS_RESULTS=/home/qatest_local/results/2015-06-15_133443
+13:28:44 13:34:43 ENV STS_REUSE_KITS=1
+13:28:44 13:34:43 ENV STS_ROOT=/home/qatest_local/repo/sts
+13:28:44 13:34:43 ENV STS_RUBY=/usr/bin/ruby
+13:28:44 13:34:43 ENV STS_RUN_NAME=
+13:28:44 13:34:43 ENV STS_TAR=/bin/tar
+13:28:44 13:34:43 ENV STS_TESTS=/home/qatest_local/repo/scenario
+13:28:44 13:34:43 ENV STS_TEST_SOURCE_DIR=/home/qatest_local/repo/scenario/tests/scenario/environment
+13:28:44 13:34:43 ENV STS_USE_CIM_MANAGE=1
+13:28:44 13:34:43 Description: Verify Scenario environment is complete and valid
+13:28:44 13:34:43 # Checking for gmake 3.81+ (set SKIP_GMAKE_TEST to disable)
+13:28:44 13:34:43 ### Expecting success
+13:28:44 13:34:43 make --version
+13:28:45 13:34:43 GNU Make 3.81
+13:28:45 13:34:43 Copyright (C) 2006  Free Software Foundation, Inc.
+13:28:45 13:34:43 This is free software; see the source for copying conditions.
+13:28:45 13:34:43 There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+13:28:45 13:34:43 PARTICULAR PURPOSE.
+13:28:45 13:34:43 
+13:28:45 13:34:43 This program built for x86_64-pc-linux-gnu
+13:28:45 13:34:43 ### Expecting success
+13:28:45 13:34:43 dpkg --list lsb | egrep -q "^ii +lsb +"
+13:28:45 13:34:44 SKIPPED: On success, do not count toward passing results
+13:28:45 13:34:44 End Time: 2015-06-15 20:34:44 UTC
+13:28:45 13:34:44 Duration: 00:01
+13:28:45 13:34:44 SKIPPED: On success, do not count toward passing results
+13:28:45 scenario/environment ................................................. skipped
+13:28:45 SKIPPED: On success, do not count toward passing results
+13:28:45 
+13:28:45 13:34:44 Started test: sts.pl
+13:28:45 13:34:44 Start Time: 2015-06-15 20:34:44 UTC
+13:28:45 13:34:44 Host: lin2
+13:28:45 13:34:44 uname: Linux lin2 3.13.0-32-generic #57~precise1-Ubuntu SMP Tue Jul 15 03:51:20 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+13:28:45 13:34:44 Directory: /home/qatest_local/results/2015-06-15_133443/cim-snapshot
+13:28:45 13:34:44 Directory: /home/qatest_local/results/2015-06-15_133443/cim-snapshot
+13:28:45 13:34:44 Test: cim-snapshot
+13:28:45 13:34:44 Test file: /home/qatest_local/repo/scenario/tests/sts/admin/cim-snapshot/sts.pl
+13:28:45 13:34:44 Test Version: unknown
+13:28:45 13:34:44 ENV CCOMP=gcc
+13:28:45 13:34:44 ENV CCOMPFLAGS=-c
+13:28:45 13:34:44 ENV CCOMPTYPE=gcc
+13:28:45 13:34:44 ENV CCOMPVERSION=4.6.3
+13:28:45 13:34:44 ENV CC_DIALECT_FLAGS=-ansi|-std=c89|-std=c99|-std=c11|-std=gnu89|-std=gnu99|-std=gnu11
+13:28:45 13:34:44 ENV COVERITY_CONFIG=/tmp/stscovcfg.20453
+13:28:45 13:34:44 ENV COVERITY_DISABLE_SSL=1
+13:28:45 13:34:44 ENV CURRENT_TEST=cim-snapshot
+13:28:45 13:34:44 ENV CVSROOT=:pserver:luxoft@offshore.coverity.com:/home/coverity/qa-repository
+13:28:45 13:34:44 ENV CWINSPEC=gcc
+13:28:45 13:34:44 ENV CXXCOMP=g++
+13:28:45 13:34:44 ENV CXXCOMPFLAGS=-c
+13:28:45 13:34:44 ENV CXXCOMPTYPE=g++
+13:28:45 13:34:44 ENV CXXWINSPEC=g++
+13:28:45 13:34:44 ENV CXX_DIALECT_FLAGS=-std=c++98|-std=c++0x|-std=c++11|-std=c++1y|-std=gnu++98|-std=gnu++0x|-std=gnu++11|-std=gnu++1y|-std=c++14|-std=gnu++14
+13:28:45 13:34:44 ENV GCC_VERSION=4.6.3
+13:28:45 13:34:44 ENV PATH=/usr/bin:/home/qatest_local/repo/sts/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games
+13:28:45 13:34:44 ENV RESPONSE_FILE_FLAG=@
+13:28:45 13:34:44 ENV STSSH=/bin/bash
+13:28:45 13:34:44 ENV STS_BUNZIP2=/bin/bunzip2
+13:28:45 13:34:44 ENV STS_CACHE=/home/qatest_local/.sts/cache
+13:28:45 13:34:44 ENV STS_CACHE_KITS=/home/qatest_local/.sts/cache/kits
+13:28:45 13:34:44 ENV STS_CACHE_LICENSES=/home/qatest_local/.sts/cache/licenses
+13:28:45 13:34:44 ENV STS_CACHE_PACKAGES=/home/qatest_local/.sts/cache/packages
+13:28:45 13:34:44 ENV STS_CACHE_QATOOLS=/home/qatest_local/.sts/cache/qatools
+13:28:45 13:34:44 ENV STS_COMPILER=gcc
+13:28:45 13:34:44 ENV STS_COMPILER_NAME=gcc
+13:28:45 13:34:44 ENV STS_COMPILER_TYPE=gcc
+13:28:45 13:34:44 ENV STS_COMPILER_VERSION=0
+13:28:45 13:34:44 ENV STS_COV_LICENSE_VERSION=v8
+13:28:45 13:34:44 ENV STS_EMAIL_CLEANUP=
+13:28:45 13:34:44 ENV STS_INSTALL_DIR=/tmp/stskits.20453
+13:28:45 13:34:44 ENV STS_KIT_TYPE=zip
+13:28:45 13:34:44 ENV STS_MAX_CACHE_MB=1024
+13:28:45 13:34:44 ENV STS_MAX_CACHE_MB_KITS=1024
+13:28:45 13:34:44 ENV STS_MAX_CACHE_MB_LICENSES=1024
+13:28:45 13:34:44 ENV STS_MAX_CACHE_MB_PACKAGES=1024
+13:28:45 13:34:44 ENV STS_RESULTS=/home/qatest_local/results/2015-06-15_133443
+13:28:45 13:34:44 ENV STS_REUSE_KITS=1
+13:28:45 13:34:44 ENV STS_ROOT=/home/qatest_local/repo/sts
+13:28:45 13:34:44 ENV STS_RUBY=/usr/bin/ruby
+13:28:45 13:34:44 ENV STS_RUN_NAME=
+13:28:45 13:34:44 ENV STS_TAR=/bin/tar
+13:28:45 13:34:44 ENV STS_TESTS=/home/qatest_local/repo/scenario
+13:28:45 13:34:44 ENV STS_TEST_SOURCE_DIR=/home/qatest_local/repo/scenario/tests/sts/admin/cim-snapshot
+13:28:45 13:34:44 ENV STS_USE_CIM_MANAGE=1
+13:28:45 13:34:44        Branch: harmony
+13:28:45 13:34:44 Snapshot Name: snap
+13:28:45 13:34:44 Snapshot Path: /opt/snapshot/harmony/current
+13:28:45 13:34:44 Stopping snapshot CIM
+13:28:45 13:34:44 STS: Configuring CIM kit...
+13:28:45 13:34:44 CIM Build: im-harmony-push-12086.335
+13:28:45 13:34:44 CIM Server dir: base
+13:28:45 13:34:44 CIM port: 8080
+13:28:45 13:34:44 STS::CIMDB: Using embedded database
+13:28:45 13:34:44 ### Pausing CIM server
+13:28:45 13:34:44 '/opt/snapshot/harmony/current/bin/cov-im-ctl' maintenance
+13:28:45 13:34:44 Stopping Coverity Connect Application ... 
+13:29:47 13:35:46 Process was killed after not closing for 60 seconds
+13:29:47 13:35:46 Coverity Connect Database already running & available
+13:29:47 13:35:46 ### Waiting for CIM Tomcat to stop
+13:29:52 13:35:51 CIM Server dir: base
+13:29:52 13:35:51 ### Stopping CIM server
+13:29:52 13:35:51 '/opt/snapshot/harmony/current/bin/cov-im-ctl' -w 180 stop
+13:29:52 13:35:51 Coverity Connect Application already down
+13:29:52 13:35:51 Stopping Coverity Connect Database ... 
+13:30:02 13:36:01 done
+13:30:03 13:36:02 ### Waiting for CIM Tomcat to stop
+13:30:08 13:36:07 Description: Creating LVM snapshot for : harmony
+13:30:08 13:36:07 sudo umount /dev/mapper/ssd-snap
+13:30:10 13:36:09 sudo lvremove -f /dev/mapper/ssd-snap
+13:30:10 13:36:09   Logical volume "snap" successfully removed
+13:30:10 13:36:09 sudo lvcreate -l 50%FREE -s -n snap /dev/ssd/base
+13:30:11 13:36:10   Logical volume "snap" created
+13:30:11 13:36:10 sudo mount -o rw,noatime,nodiratime,discard /dev/ssd/snap /opt/snapshot/
+13:30:11 13:36:10 sed -i 's|dir.temp=/opt/cim|dir.temp=/opt/snapshot|' /opt/snapshot/harmony/current/config/cim.properties
+13:30:11 13:36:10 sed -i 's|log_dir=/opt/cim|log_dir=/opt/snapshot|' /opt/snapshot/harmony/current/config/system.properties
+13:30:11 13:36:10 sed -i 's|pg_datadir=/opt/cim|pg_datadir=/opt/snapshot|' /opt/snapshot/harmony/current/config/system.properties
+13:30:11 13:36:10 Description: Flushing OS buffers
+13:30:11 13:36:10 sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"
+13:30:12 13:36:11 Start snapshot CIM
+13:30:12 13:36:11 /opt/snapshot/harmony/current/jre/bin/java -version
+13:30:12 13:36:11 java version "1.7.0_76"
+13:30:12 13:36:11 Java(TM) SE Runtime Environment (build 1.7.0_76-b13)
+13:30:12 13:36:11 Java HotSpot(TM) 64-Bit Server VM (build 24.76-b04, mixed mode)
+13:30:12 13:36:11 ### Starting CIM server
+13:30:12 13:36:11 CIM Server dir: base
+13:30:12 13:36:11 '/opt/snapshot/harmony/current/bin/cov-im-ctl' -w 180 start
+13:30:13 13:36:12 Starting Coverity Connect Controller ... 
+13:30:14 13:36:13 done
+13:30:14 13:36:13 Starting Coverity Connect Database ... 
+13:30:14 13:36:13 done
+13:30:14 13:36:13 Starting Coverity Connect Application ... 
+13:31:08 13:37:07 done
+13:31:08 13:37:07 ### Waiting for CIM to start (8080, 8005, 9090, 8443)
+13:31:08 13:37:07 ### Waiting for CIM to provide WSDL schema (http://localhost:8080/ws/v7/configurationservice?wsdl)
+13:31:08 13:37:07 curl --silent --show-error --output /home/qatest_local/results/2015-06-15_133443/cim-snapshot/cim_wait_for_webservices.html http://localhost:8080/ws/v7/configurationservice?wsdl
+13:31:09 13:37:08 ### CIM started
+13:31:09 13:37:08 ### CIM DB PID: 20985
+13:31:09 13:37:08 ### CIM Tomcat PID: 21004
+13:31:09 13:37:08 ### CIM PID: 20940
+13:31:09 13:37:08 Ruby (at /usr/bin/ruby) path option: 1
+13:31:09 13:37:08 ruby '/home/qatest_local/repo/scenario/assets/cim/cim-manage.rb' -x json --server localhost --port 8080 --version v7 --output-file wscall1434400628.txt --call setMessageOfTheDay --data '{"message":"CIM version: 7.6.1\\nCIM build: im-harmony-push-12086.335\\n"}'
+13:31:10 13:37:09 ruby '/home/qatest_local/repo/scenario/assets/cim/cim-manage.rb' -x json --server localhost --port 8080 --version v7 --output-file wscall1434400629.txt --call getMessageOfTheDay --data "{}"
+13:31:11 13:37:10 
+13:31:11 ### CIM "Message of the Day" was set to:
+13:31:11 CIM version: 7.6.1\
+13:31:11 CIM build: im-harmony-push-12086.335\
+13:31:11 
+13:31:11 13:37:10 End Time: 2015-06-15 20:37:10 UTC
+13:31:11 13:37:10 Duration: 02:26
+13:31:11 cim-snapshot ......................................................... passed
+13:31:11 13:37:10 ### Removing old /home/qatest_local/results/2015-06-15_133443/scenario/environment
+13:31:11 13:37:10 Started test: scenario/environment
+13:31:11 13:37:10 Start Time: 2015-06-15 20:37:10 UTC
+13:31:11 13:37:10 Host: lin2
+13:31:11 13:37:10 uname: Linux lin2 3.13.0-32-generic #57~precise1-Ubuntu SMP Tue Jul 15 03:51:20 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+13:31:11 13:37:10 Directory: /home/qatest_local/results/2015-06-15_133443/scenario/environment
+13:31:11 13:37:10 Directory: /home/qatest_local/results/2015-06-15_133443/scenario/environment
+13:31:11 13:37:10 Test: scenario/environment
+13:31:11 13:37:10 Test file: /home/qatest_local/repo/scenario/tests/scenario/environment/sts.pl
+13:31:11 13:37:10 Test Version: unknown
+13:31:11 13:37:10 ENV CCOMP=gcc
+13:31:11 13:37:10 ENV CCOMPFLAGS=-c
+13:31:11 13:37:10 ENV CCOMPTYPE=gcc
+13:31:11 13:37:10 ENV CCOMPVERSION=4.6.3
+13:31:11 13:37:10 ENV CC_DIALECT_FLAGS=-ansi|-std=c89|-std=c99|-std=c11|-std=gnu89|-std=gnu99|-std=gnu11
+13:31:11 13:37:10 ENV COVERITY_CONFIG=/tmp/stscovcfg.20453
+13:31:11 13:37:10 ENV COVERITY_DISABLE_SSL=1
+13:31:11 13:37:10 ENV CURRENT_TEST=scenario/environment
+13:31:11 13:37:10 ENV CVSROOT=:pserver:luxoft@offshore.coverity.com:/home/coverity/qa-repository
+13:31:11 13:37:10 ENV CWINSPEC=gcc
+13:31:11 13:37:10 ENV CXXCOMP=g++
+13:31:11 13:37:10 ENV CXXCOMPFLAGS=-c
+13:31:11 13:37:10 ENV CXXCOMPTYPE=g++
+13:31:11 13:37:10 ENV CXXWINSPEC=g++
+13:31:11 13:37:10 ENV CXX_DIALECT_FLAGS=-std=c++98|-std=c++0x|-std=c++11|-std=c++1y|-std=gnu++98|-std=gnu++0x|-std=gnu++11|-std=gnu++1y|-std=c++14|-std=gnu++14
+13:31:11 13:37:10 ENV GCC_VERSION=4.6.3
+13:31:11 13:37:10 ENV PATH=/usr/bin:/home/qatest_local/repo/sts/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games
+13:31:11 13:37:10 ENV RESPONSE_FILE_FLAG=@
+13:31:11 13:37:10 ENV STSSH=/bin/bash
+13:31:11 13:37:10 ENV STS_BUNZIP2=/bin/bunzip2
+13:31:11 13:37:10 ENV STS_CACHE=/home/qatest_local/.sts/cache
+13:31:11 13:37:10 ENV STS_CACHE_KITS=/home/qatest_local/.sts/cache/kits
+13:31:11 13:37:10 ENV STS_CACHE_LICENSES=/home/qatest_local/.sts/cache/licenses
+13:31:11 13:37:10 ENV STS_CACHE_PACKAGES=/home/qatest_local/.sts/cache/packages
+13:31:11 13:37:10 ENV STS_CACHE_QATOOLS=/home/qatest_local/.sts/cache/qatools
+13:31:11 13:37:10 ENV STS_COMPILER=gcc
+13:31:11 13:37:10 ENV STS_COMPILER_NAME=gcc
+13:31:11 13:37:10 ENV STS_COMPILER_TYPE=gcc
+13:31:11 13:37:10 ENV STS_COMPILER_VERSION=0
+13:31:11 13:37:10 ENV STS_COV_LICENSE_VERSION=v8
+13:31:11 13:37:10 ENV STS_EMAIL_CLEANUP=
+13:31:11 13:37:10 ENV STS_INSTALL_DIR=/tmp/stskits.20453
+13:31:11 13:37:10 ENV STS_KIT_TYPE=zip
+13:31:11 13:37:10 ENV STS_MAX_CACHE_MB=1024
+13:31:11 13:37:10 ENV STS_MAX_CACHE_MB_KITS=1024
+13:31:11 13:37:10 ENV STS_MAX_CACHE_MB_LICENSES=1024
+13:31:11 13:37:10 ENV STS_MAX_CACHE_MB_PACKAGES=1024
+13:31:11 13:37:10 ENV STS_RESULTS=/home/qatest_local/results/2015-06-15_133443
+13:31:11 13:37:10 ENV STS_REUSE_KITS=1
+13:31:11 13:37:10 ENV STS_ROOT=/home/qatest_local/repo/sts
+13:31:11 13:37:10 ENV STS_RUBY=/usr/bin/ruby
+13:31:11 13:37:10 ENV STS_RUN_NAME=
+13:31:11 13:37:10 ENV STS_TAR=/bin/tar
+13:31:11 13:37:10 ENV STS_TESTS=/home/qatest_local/repo/scenario
+13:31:11 13:37:10 ENV STS_TEST_SOURCE_DIR=/home/qatest_local/repo/scenario/tests/scenario/environment
+13:31:11 13:37:10 ENV STS_USE_CIM_MANAGE=1
+13:31:11 13:37:10 Description: Verify Scenario environment is complete and valid
+13:31:11 13:37:10 # Checking for gmake 3.81+ (set SKIP_GMAKE_TEST to disable)
+13:31:11 13:37:10 ### Expecting success
+13:31:11 13:37:10 make --version
+13:31:11 13:37:10 GNU Make 3.81
+13:31:11 13:37:10 Copyright (C) 2006  Free Software Foundation, Inc.
+13:31:11 13:37:10 This is free software; see the source for copying conditions.
+13:31:11 13:37:10 There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+13:31:11 13:37:10 PARTICULAR PURPOSE.
+13:31:11 13:37:10 
+13:31:11 13:37:10 This program built for x86_64-pc-linux-gnu
+13:31:11 13:37:10 ### Expecting success
+13:31:11 13:37:10 dpkg --list lsb | egrep -q "^ii +lsb +"
+13:31:11 13:37:10 SKIPPED: On success, do not count toward passing results
+13:31:11 13:37:10 End Time: 2015-06-15 20:37:10 UTC
+13:31:11 13:37:10 Duration: 00:00
+13:31:11 13:37:10 SKIPPED: On success, do not count toward passing results
+13:31:11 scenario/environment ................................................. skipped
+13:31:11 SKIPPED: On success, do not count toward passing results
+13:31:11 
+13:31:11 13:37:10 ### Verifying STS shutdown environment
+13:31:11 13:37:10 1 test ran, 1 passed (100.0%), 0 failed (0.0%), 2 skipped, 0 exceptional
+13:31:11 1 test ran, 1 passed (100.0%), 0 failed (0.0%), 2 skipped, 0 exceptional
+13:31:11 13:37:10 Finished at: 2015-06-15 20:37:10 UTC
+13:31:11 Scenario codename 'indio'
+13:31:11 ### Expecting success
+13:31:11 java  -enableassertions  -Dhostname=lin2 -Dport=8080 -DdataPort=9090 -Dcim.spinner.timeout=60000 -Dtest.failure.pagedump=true -Dtest.failure.screenshot=true -Dbrowser=Firefox -Dsaucelabs.platform=linux -cp /home/qatest_local/assets/cimautomation-harmony-SNAPSHOT.jar org.testng.TestNG  -methods com.coverity.ces.webdriver.cases.performance.workflow.ws.ScaleGetMergedDefectsForProjectScope.test
+13:31:12 [TestNG] Running:
+13:31:12   Command line suite
+13:31:12 
+13:31:12 
+13:31:12 [001] >>> New logger for Thread[main,5,main], com.coverity.ces.webdriver.cases.performance.workflow.ws.ScaleGetMergedDefectsForProjectScope
+13:31:12 [001]   . . .     [@4ms] Entered TestRoot.initializeConfiguration()
+13:31:12 [001] @ SYSTEM:   TEST CLASS: performance.workflow.ws.ScaleGetMergedDefectsForProjectScope
+13:31:12 [001] @ SYSTEM:   STARTED: 2015-06-15 13:31:12
+13:31:12 [001] @ SYSTEM:   Attempting to load properties file: src/test/resources/properties/user/qatest_local.properties
+13:31:12 [001] * WARNING:  No properties file found. Selenium configuration may not be correct.
+13:31:13 [001] @ STEP:     [@763ms] WS: Set the log level to DEBUG.
+13:31:15 [001] @ SYSTEM:   -----
+13:31:15 [001] @ SYSTEM:   CimAutomation VERSION: 6be2d7cb2f3d99e48351a6ae46803c9a4ed3c49b
+13:31:15 [001]   . . .     [@2992ms] WS: Getting the external version.
+13:31:15 [001]   . . .     [@3550ms] WS: Getting the internal version.
+13:31:16 [001] @ SYSTEM:   TARGET CIM/CC VERSION: 7.6.1 a10afef im-harmony-push-12086.335
+13:31:16 [001] @ SYSTEM:   STSReporter VERSION: 0.2.8-SNAPSHOT
+13:31:16 [001] @ SYSTEM:   JRE VERSION: 1.7.0_79
+13:31:16 [001] @ SYSTEM:   Memory used: 151.39 MB (1930.50 MB allocated out of a possible 27159.00 MB, with 3 tracked objects)
+13:31:16 [001] @ SYSTEM:   -----
+13:31:16 [001] > SCRIPT:   [@3700ms] Handling test non-UI preconditions...
+13:31:16 [001] @ SYSTEM:   Non-ui preconditions done.
+13:31:16 [001]   . . .     [@3700ms] Exiting TestRoot.initializeConfiguration()
+13:31:16 [001]   . . .     [@3706ms] Entered TestRoot.beforeTestMethodPreconditions()
+13:31:16 [001] @ SYSTEM:   TEST METHOD: public void com.coverity.ces.webdriver.cases.performance.workflow.ws.ScaleGetMergedDefectsForProjectScope.test()
+13:31:16 [001] > SCRIPT:   [@3706ms] Handling test preconditions...
+13:31:16 [001] @ SYSTEM:   Setting log verbosity to DEBUG
+13:31:16 [001] @ SYSTEM:   Preconditions done.
+13:31:16 [001]   . . .     [@3773ms] Exiting TestRoot.beforeTestMethodPreconditions()
+13:31:16 [001] > SCRIPT:   [@3774ms] Handling test method...
+13:31:16 [001]   . . .     [@3774ms] Starting getMergedDefectsForProjectScope with no filters ...
+13:31:16 [001]   . . .     [@3774ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=1]
+13:31:19 [001] -DURATION-  [took 3187ms @ 3774-6961ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:19 [001]   . . .     [@6961ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=2]
+13:31:21 [001] -DURATION-  [took 1642ms @ 6961-8603ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:21 [001]   . . .     [@8604ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=3]
+13:31:22 [001] -DURATION-  [took 1359ms @ 8604-9963ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:22 [001]   . . .     [@9964ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=4]
+13:31:23 [001] -DURATION-  [took 1294ms @ 9964-11258ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:23 [001]   . . .     [@11259ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=5]
+13:31:24 [001] -DURATION-  [took 1231ms @ 11259-12490ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:24 [001]   . . .     [@12491ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=6]
+13:31:26 [001] -DURATION-  [took 1234ms @ 12491-13725ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:26 [001]   . . .     [@13725ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=7]
+13:31:27 [001] -DURATION-  [took 1271ms @ 13725-14996ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:27 [001]   . . .     [@14997ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=8]
+13:31:28 [001] -DURATION-  [took 1272ms @ 14997-16269ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:28 [001]   . . .     [@16269ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=9]
+13:31:29 [001] -DURATION-  [took 1281ms @ 16270-17551ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:29 [001]   . . .     [@17551ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=10]
+13:31:31 [001] -DURATION-  [took 1245ms @ 17551-18796ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:31 [001]   . . .     [@18797ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=1]
+13:31:32 [001] -DURATION-  [took 1381ms @ 18797-20178ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:32 [001]   . . .     [@20178ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=2]
+13:31:34 [001] -DURATION-  [took 1381ms @ 20178-21559ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:34 [001]   . . .     [@21560ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=3]
+13:31:35 [001] -DURATION-  [took 1327ms @ 21560-22887ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:35 [001]   . . .     [@22888ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=4]
+13:31:36 [001] -DURATION-  [took 1438ms @ 22888-24326ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:36 [001]   . . .     [@24326ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=5]
+13:31:38 [001] -DURATION-  [took 1321ms @ 24326-25647ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:38 [001]   . . .     [@25648ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=6]
+13:31:39 [001] -DURATION-  [took 1318ms @ 25648-26966ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:39 [001]   . . .     [@26966ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=7]
+13:31:40 [001] -DURATION-  [took 1264ms @ 26966-28230ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:40 [001]   . . .     [@28230ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=8]
+13:31:42 [001] -DURATION-  [took 1275ms @ 28230-29505ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:42 [001]   . . .     [@29506ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=9]
+13:31:43 [001] -DURATION-  [took 1260ms @ 29506-30766ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:43 [001]   . . .     [@30766ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=10]
+13:31:44 [001] -DURATION-  [took 1292ms @ 30766-32058ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:44 [001]   . . .     [@32058ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=1]
+13:31:46 [001] -DURATION-  [took 1742ms @ 32058-33800ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:46 [001]   . . .     [@33800ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=2]
+13:31:48 [001] -DURATION-  [took 1821ms @ 33800-35621ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:48 [001]   . . .     [@35622ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=3]
+13:31:49 [001] -DURATION-  [took 1635ms @ 35622-37257ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:49 [001]   . . .     [@37258ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=4]
+13:31:51 [001] -DURATION-  [took 1629ms @ 37258-38887ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:51 [001]   . . .     [@38887ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=5]
+13:31:52 [001] -DURATION-  [took 1596ms @ 38887-40483ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:52 [001]   . . .     [@40484ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=6]
+13:31:54 [001] -DURATION-  [took 1635ms @ 40484-42119ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:54 [001]   . . .     [@42119ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=7]
+13:31:56 [001] -DURATION-  [took 1562ms @ 42119-43681ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:56 [001]   . . .     [@43681ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=8]
+13:31:57 [001] -DURATION-  [took 1600ms @ 43682-45282ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:57 [001]   . . .     [@45282ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=9]
+13:31:59 [001] -DURATION-  [took 1718ms @ 45282-47000ms] Finished: Timing getMergedDefectsForProjectScope()
+13:31:59 [001]   . . .     [@47000ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=10]
+13:32:01 [001] -DURATION-  [took 1719ms @ 47000-48719ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:01 [001]   . . .     [@48719ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=1]
+13:32:03 [001] -DURATION-  [took 2674ms @ 48719-51393ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:03 [001]   . . .     [@51394ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=2]
+13:32:06 [001] -DURATION-  [took 2813ms @ 51394-54207ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:06 [001]   . . .     [@54208ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=3]
+13:32:09 [001] -DURATION-  [took 3097ms @ 54208-57305ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:09 [001]   . . .     [@57305ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=4]
+13:32:12 [001] -DURATION-  [took 2663ms @ 57306-59969ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:12 [001]   . . .     [@59970ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=5]
+13:32:15 [001] -DURATION-  [took 2647ms @ 59970-62617ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:15 [001]   . . .     [@62617ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=6]
+13:32:17 [001] -DURATION-  [took 2664ms @ 62617-65281ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:17 [001]   . . .     [@65281ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=7]
+13:32:20 [001] -DURATION-  [took 2613ms @ 65281-67894ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:20 [001]   . . .     [@67894ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=8]
+13:32:23 [001] -DURATION-  [took 2749ms @ 67894-70643ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:23 [001]   . . .     [@70643ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=9]
+13:32:25 [001] -DURATION-  [took 2669ms @ 70643-73312ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:25 [001]   . . .     [@73313ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=10]
+13:32:28 [001] -DURATION-  [took 2502ms @ 73313-75815ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:28 [001]   . . .     [@75815ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=1]
+13:32:33 [001] -DURATION-  [took 5584ms @ 75815-81399ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:33 [001]   . . .     [@81399ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=2]
+13:32:39 [001] -DURATION-  [took 5420ms @ 81399-86819ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:39 [001]   . . .     [@86819ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=3]
+13:32:44 [001] -DURATION-  [took 5336ms @ 86820-92156ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:44 [001]   . . .     [@92156ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=4]
+13:32:49 [001] -DURATION-  [took 5301ms @ 92156-97457ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:49 [001]   . . .     [@97457ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=5]
+13:32:55 [001] -DURATION-  [took 5307ms @ 97457-102764ms] Finished: Timing getMergedDefectsForProjectScope()
+13:32:55 [001]   . . .     [@102764ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=6]
+13:33:00 [001] -DURATION-  [took 5412ms @ 102764-108176ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:00 [001]   . . .     [@108176ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=7]
+13:33:06 [001] -DURATION-  [took 5600ms @ 108177-113777ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:06 [001]   . . .     [@113777ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=8]
+13:33:11 [001] -DURATION-  [took 5261ms @ 113777-119038ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:11 [001]   . . .     [@119039ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=9]
+13:33:16 [001] -DURATION-  [took 5518ms @ 119039-124557ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:16 [001]   . . .     [@124557ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=10]
+13:33:22 [001] -DURATION-  [took 5252ms @ 124557-129809ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:22 [001]   . . .     [@129809ms] Starting getMergedDefectsForProjectScope with with filters ...
+13:33:22 [001]   . . .     [@129809ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=1]
+13:33:23 [001] -DURATION-  [took 1106ms @ 129809-130915ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:23 [001]   . . .     [@130915ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=2]
+13:33:24 [001] -DURATION-  [took 1077ms @ 130915-131992ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:24 [001]   . . .     [@131992ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=3]
+13:33:25 [001] -DURATION-  [took 1043ms @ 131992-133035ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:25 [001]   . . .     [@133035ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=4]
+13:33:26 [001] -DURATION-  [took 1059ms @ 133035-134094ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:26 [001]   . . .     [@134094ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=5]
+13:33:27 [001] -DURATION-  [took 1156ms @ 134095-135251ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:27 [001]   . . .     [@135251ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=6]
+13:33:28 [001] -DURATION-  [took 1180ms @ 135252-136432ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:28 [001]   . . .     [@136432ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=7]
+13:33:30 [001] -DURATION-  [took 1067ms @ 136432-137499ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:30 [001]   . . .     [@137499ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=8]
+13:33:30 [001] -DURATION-  [took 1082ms @ 137499-138581ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:30 [001]   . . .     [@138581ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=9]
+13:33:32 [001] -DURATION-  [took 1236ms @ 138581-139817ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:32 [001]   . . .     [@139817ms] Calling getMergedDefectsForProjectScope with page size of : 100 [count=10]
+13:33:33 [001] -DURATION-  [took 1153ms @ 139817-140970ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:33 [001]   . . .     [@140970ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=1]
+13:33:34 [001] -DURATION-  [took 1064ms @ 140970-142034ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:34 [001]   . . .     [@142034ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=2]
+13:33:35 [001] -DURATION-  [took 1068ms @ 142034-143102ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:35 [001]   . . .     [@143102ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=3]
+13:33:36 [001] -DURATION-  [took 1013ms @ 143102-144115ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:36 [001]   . . .     [@144115ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=4]
+13:33:37 [001] -DURATION-  [took 1113ms @ 144116-145229ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:37 [001]   . . .     [@145229ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=5]
+13:33:38 [001] -DURATION-  [took 1165ms @ 145229-146394ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:38 [001]   . . .     [@146394ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=6]
+13:33:39 [001] -DURATION-  [took 1102ms @ 146394-147496ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:39 [001]   . . .     [@147496ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=7]
+13:33:41 [001] -DURATION-  [took 1070ms @ 147496-148566ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:41 [001]   . . .     [@148566ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=8]
+13:33:42 [001] -DURATION-  [took 1148ms @ 148566-149714ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:42 [001]   . . .     [@149715ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=9]
+13:33:43 [001] -DURATION-  [took 1059ms @ 149715-150774ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:43 [001]   . . .     [@150774ms] Calling getMergedDefectsForProjectScope with page size of : 200 [count=10]
+13:33:44 [001] -DURATION-  [took 1187ms @ 150774-151961ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:44 [001]   . . .     [@151961ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=1]
+13:33:45 [001] -DURATION-  [took 1032ms @ 151962-152994ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:45 [001]   . . .     [@152995ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=2]
+13:33:46 [001] -DURATION-  [took 1017ms @ 152995-154012ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:46 [001]   . . .     [@154012ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=3]
+13:33:47 [001] -DURATION-  [took 1010ms @ 154012-155022ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:47 [001]   . . .     [@155022ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=4]
+13:33:48 [001] -DURATION-  [took 1005ms @ 155022-156027ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:48 [001]   . . .     [@156027ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=5]
+13:33:49 [001] -DURATION-  [took 1033ms @ 156027-157060ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:49 [001]   . . .     [@157060ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=6]
+13:33:50 [001] -DURATION-  [took 1082ms @ 157060-158142ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:50 [001]   . . .     [@158142ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=7]
+13:33:51 [001] -DURATION-  [took 1090ms @ 158142-159232ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:51 [001]   . . .     [@159232ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=8]
+13:33:52 [001] -DURATION-  [took 1237ms @ 159232-160469ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:52 [001]   . . .     [@160469ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=9]
+13:33:54 [001] -DURATION-  [took 1139ms @ 160469-161608ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:54 [001]   . . .     [@161609ms] Calling getMergedDefectsForProjectScope with page size of : 400 [count=10]
+13:33:55 [001] -DURATION-  [took 1165ms @ 161609-162774ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:55 [001]   . . .     [@162774ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=1]
+13:33:56 [001] -DURATION-  [took 1066ms @ 162774-163840ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:56 [001]   . . .     [@163841ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=2]
+13:33:57 [001] -DURATION-  [took 1066ms @ 163841-164907ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:57 [001]   . . .     [@164907ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=3]
+13:33:58 [001] -DURATION-  [took 1043ms @ 164908-165951ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:58 [001]   . . .     [@165951ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=4]
+13:33:59 [001] -DURATION-  [took 1057ms @ 165951-167008ms] Finished: Timing getMergedDefectsForProjectScope()
+13:33:59 [001]   . . .     [@167008ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=5]
+13:34:00 [001] -DURATION-  [took 1101ms @ 167009-168110ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:00 [001]   . . .     [@168111ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=6]
+13:34:01 [001] -DURATION-  [took 1156ms @ 168111-169267ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:01 [001]   . . .     [@169267ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=7]
+13:34:02 [001] -DURATION-  [took 1041ms @ 169267-170308ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:02 [001]   . . .     [@170308ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=8]
+13:34:03 [001] -DURATION-  [took 1071ms @ 170308-171379ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:03 [001]   . . .     [@171380ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=9]
+13:34:04 [001] -DURATION-  [took 1088ms @ 171380-172468ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:04 [001]   . . .     [@172468ms] Calling getMergedDefectsForProjectScope with page size of : 800 [count=10]
+13:34:06 [001] -DURATION-  [took 1079ms @ 172469-173548ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:06 [001]   . . .     [@173548ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=1]
+13:34:07 [001] -DURATION-  [took 1008ms @ 173548-174556ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:07 [001]   . . .     [@174556ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=2]
+13:34:08 [001] -DURATION-  [took 1082ms @ 174556-175638ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:08 [001]   . . .     [@175638ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=3]
+13:34:09 [001] -DURATION-  [took 1007ms @ 175639-176646ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:09 [001]   . . .     [@176647ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=4]
+13:34:10 [001] -DURATION-  [took 1123ms @ 176647-177770ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:10 [001]   . . .     [@177770ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=5]
+13:34:11 [001] -DURATION-  [took 1084ms @ 177770-178854ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:11 [001]   . . .     [@178854ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=6]
+13:34:12 [001] -DURATION-  [took 1040ms @ 178854-179894ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:12 [001]   . . .     [@179894ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=7]
+13:34:13 [001] -DURATION-  [took 1033ms @ 179894-180927ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:13 [001]   . . .     [@180927ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=8]
+13:34:14 [001] -DURATION-  [took 1056ms @ 180927-181983ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:14 [001]   . . .     [@181983ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=9]
+13:34:15 [001] -DURATION-  [took 1070ms @ 181983-183053ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:15 [001]   . . .     [@183053ms] Calling getMergedDefectsForProjectScope with page size of : 1600 [count=10]
+13:34:16 [001] -DURATION-  [took 1046ms @ 183053-184099ms] Finished: Timing getMergedDefectsForProjectScope()
+13:34:16 [001]   . . .     [@184100ms] BasicTestListener.onTestSuccess() called
+13:34:16 [001] @ SYSTEM:   Test success reported.
+13:34:16 [001]   . . .     [@184101ms] Entered TestRoot.afterTestMethodCleanup()
+13:34:16 [001] > SCRIPT:   [@184101ms] Handling test postconditions...
+13:34:16 [001] @ SYSTEM:   Postconditions done.
+13:34:16 [001]   . . .     [@184101ms] Exiting TestRoot.afterTestMethodCleanup()
+13:34:16 [001] @ SYSTEM:   Summarizing steps:
+13:34:16 -----
+13:34:16 PRECONDITIONS:
+13:34:16  (none)
+13:34:16 
+13:34:16 TEST STEPS:
+13:34:16  (none)
+13:34:16 
+13:34:16 POSTCONDITIONS:
+13:34:16  (none)
+13:34:16 -----
+13:34:16 [001] @ SYSTEM:   Test completed. Tearing down...
+13:34:16 [001] @ SYSTEM:   Memory used: 396.76 MB (1918.00 MB allocated out of a possible 27159.00 MB, with 3 tracked objects)
+13:34:16 [001] @ SYSTEM:   Injecting message into CIM log.
+13:34:16 [001] @ SYSTEM:   Determining final test status.
+13:34:16 [001] @ SYSTEM:   -----
+13:34:16 [001] @ SYSTEM:   FINISHED: 2015-06-15 13:34:16
+13:34:16 [001] @ SYSTEM:   TEST DURATION: 184140ms (00:03:04.140)
+13:34:16 [001] @ SYSTEM:   RESULT: Test PASSED (performance.workflow.ws.ScaleGetMergedDefectsForProjectScope)
+13:34:16 [001] @ SYSTEM:   -----
+13:34:16 [001] @ SYSTEM:   TESTLINK RESULTS: (No test cases tracked.)
+13:34:16 [001] @ SYSTEM:   -----
+13:34:16 [001] @ SYSTEM:   Preparing report objects for STSweb.
+13:34:16 [001] @ SYSTEM:   Reporting to STS with session ID: [no live session]
+13:34:16 [001] >>> Log contents written to file /home/qatest_local/results/2015-06-15_132521/scale_get_merged_defects_for_project_scope/test-output/artifacts/performance/workflow/ws/ScaleGetMergedDefectsForProjectScope.15-06-15-13-34-16.runlog
+13:34:16 [001] @ SYSTEM:   No Reporter provided by STSReporterListener. Must be local run.
+13:34:16 [001] @ SYSTEM:   Producing final test artifacts.
+13:34:16 [001] @ SYSTEM:   Teardown complete.
+13:34:16 
+13:34:16 
+13:34:16 
+13:34:16 ===============================================
+13:34:16 Command line suite
+13:34:16 Total tests run: 1, Failures: 0, Skips: 0
+13:34:16 ===============================================
+13:34:16 
+13:34:16 End Time: 2015-06-15 20:34:16 UTC
+13:34:16 Duration: 05:37
+scale_get_merged_defects_for_project_scope ........................... passed
+13:34:16 Started test: scenario/environment
+13:34:16 Start Time: 2015-06-15 20:34:16 UTC
+13:34:16 Host: load2
+13:34:17 uname: Linux load2 3.13.0-32-generic #57~precise1-Ubuntu SMP Tue Jul 15 03:51:20 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+13:34:17 Directory: /home/qatest_local/results/2015-06-15_132521/scenario/environment
+13:34:17 Directory: /home/qatest_local/results/2015-06-15_132521/scenario/environment
+13:34:17 Test: scenario/environment
+13:34:17 Test file: /home/qatest_local/repo/scenario/tests/scenario/environment/sts.pl
+13:34:17 Test Version: unknown
+13:34:17 ENV CCOMP=gcc
+13:34:17 ENV CCOMPFLAGS=-c
+13:34:17 ENV CCOMPTYPE=gcc
+13:34:17 ENV CCOMPVERSION=4.6.3
+13:34:17 ENV CC_DIALECT_FLAGS=-ansi|-std=c89|-std=c99|-std=c11|-std=gnu89|-std=gnu99|-std=gnu11
+13:34:17 ENV COVDABUILDNAME=dynamic-analysis
+13:34:17 ENV COVDAHOME=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/dynamic-analysis
+13:34:17 ENV COVERITY_CONFIG=/tmp/stscovcfg.8908
+13:34:17 ENV COVERITY_COV_USER_DIR=/home/qatest_local/results/2015-06-15_132521/.coverity
+13:34:17 ENV COVERITY_DISABLE_SSL=1
+13:34:17 ENV COVEXTENDHOME=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk
+13:34:17 ENV COVEXTENDROOT=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk
+13:34:17 ENV COVSABUILDNAME=cov-analysis-linux64-7.6.1.5
+13:34:17 ENV COVSADATA=/home/qatest_local/results/2015-06-15_132521/sa_data
+13:34:17 ENV COVSAHOME=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5
+13:34:17 ENV COV_ANALYSIS_ROOT=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5
+13:34:17 ENV CURRENT_TEST=scenario/environment
+13:34:17 ENV CVSROOT=:pserver:luxoft@offshore.coverity.com:/home/coverity/qa-repository
+13:34:17 ENV CWINSPEC=gcc
+13:34:17 ENV CXXCOMP=g++
+13:34:17 ENV CXXCOMPFLAGS=-c
+13:34:17 ENV CXXCOMPTYPE=g++
+13:34:17 ENV CXXWINSPEC=g++
+13:34:17 ENV CXX_DIALECT_FLAGS=-std=c++98|-std=c++0x|-std=c++11|-std=c++1y|-std=gnu++98|-std=gnu++0x|-std=gnu++11|-std=gnu++1y|-std=c++14|-std=gnu++14
+13:34:17 ENV EXTEND_COMP_DIR=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk/compiler
+13:34:17 ENV EXTEND_HOME=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk
+13:34:17 ENV EXTEND_ROOT=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/sdk
+13:34:17 ENV GCC_VERSION=4.6.3
+13:34:17 ENV PATH=/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/bin:/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/dynamic-analysis/bin:/tmp/stskits.8908/cov-analysis-linux64-7.6.1.5/dynamic-analysis/dynamic-analysis/bin:/usr/bin:/home/qatest_local/repo/sts/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games
+13:34:17 ENV RESPONSE_FILE_FLAG=@
+13:34:17 ENV STSSH=/bin/bash
+13:34:17 ENV STS_BUNZIP2=/bin/bunzip2
+13:34:17 ENV STS_CACHE=/home/qatest_local/.sts/cache
+13:34:17 ENV STS_CACHE_KITS=/home/qatest_local/.sts/cache/kits
+13:34:17 ENV STS_CACHE_LICENSES=/home/qatest_local/.sts/cache/licenses
+13:34:17 ENV STS_CACHE_PACKAGES=/home/qatest_local/.sts/cache/packages
+13:34:17 ENV STS_CACHE_QATOOLS=/home/qatest_local/.sts/cache/qatools
+13:34:17 ENV STS_COMPILER=gcc
+13:34:17 ENV STS_COMPILER_NAME=gcc
+13:34:17 ENV STS_COMPILER_TYPE=gcc
+13:34:17 ENV STS_COMPILER_VERSION=0
+13:34:17 ENV STS_COV_LICENSE_VERSION=v8
+13:34:17 ENV STS_EMAIL_CLEANUP=
+13:34:17 ENV STS_INSTALL_DIR=/tmp/stskits.8908
+13:34:17 ENV STS_KIT_TYPE=zip
+13:34:17 ENV STS_MAX_CACHE_MB=1024
+13:34:17 ENV STS_MAX_CACHE_MB_KITS=1024
+13:34:17 ENV STS_MAX_CACHE_MB_LICENSES=1024
+13:34:17 ENV STS_MAX_CACHE_MB_PACKAGES=1024
+13:34:17 ENV STS_PRESERVE_OUTPUT=1
+13:34:17 ENV STS_RESULTS=/home/qatest_local/results/2015-06-15_132521
+13:34:17 ENV STS_REUSE_KITS=1
+13:34:17 ENV STS_ROOT=/home/qatest_local/repo/sts
+13:34:17 ENV STS_RUBY=/usr/bin/ruby
+13:34:17 ENV STS_RUN_NAME=
+13:34:17 ENV STS_TAR=/bin/tar
+13:34:17 ENV STS_TEST_SOURCE_DIR=/home/qatest_local/repo/scenario/tests/scenario/environment
+13:34:17 ENV STS_USE_CIM_MANAGE=1
+13:34:17 Description: Verify Scenario environment is complete and valid
+13:34:17 # Checking for gmake 3.81+ (set SKIP_GMAKE_TEST to disable)
+13:34:17 ### Expecting success
+13:34:17 make --version
+13:34:17 GNU Make 3.81
+13:34:17 Copyright (C) 2006  Free Software Foundation, Inc.
+13:34:17 This is free software; see the source for copying conditions.
+13:34:17 There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+13:34:17 PARTICULAR PURPOSE.
+13:34:17 
+13:34:17 This program built for x86_64-pc-linux-gnu
+13:34:17 ### Expecting success
+13:34:17 dpkg --list lsb | egrep -q "^ii +lsb +"
+13:34:17 SKIPPED: On success, do not count toward passing results
+13:34:17 End Time: 2015-06-15 20:34:17 UTC
+13:34:17 Duration: 00:01
+13:34:17 SKIPPED: On success, do not count toward passing results
+scenario/environment ................................................. skipped
+SKIPPED: On success, do not count toward passing results
+
+13:34:17 ### Verifying STS shutdown environment
+13:34:17 1 test ran, 1 passed (100.0%), 0 failed (0.0%), 2 skipped, 0 exceptional
+1 test ran, 1 passed (100.0%), 0 failed (0.0%), 2 skipped, 0 exceptional
+13:34:17 Removing /tmp/stskits.8908
+13:34:18 Finished at: 2015-06-15 20:34:18 UTC
+13:34:18 ### chdir /home/qatest_local/repo/scenario
+13:34:18 ### chdir /home/qatest_local/repo/scenario/tests/cim/performance/ws
+13:34:18 'latest' symbolic linked to the results path /home/qatest_local/results/2015-06-15_133418.
+13:34:18 Host: load2
+13:34:18 User: qatest_local
+13:34:18 Platform: ubuntu12.04-64
+13:34:18 Command Line: /home/qatest_local/repo/sts/bin/stsrun -v stop_cim.pl
+13:34:18 DNS Servers: 172.16.10.10, 10.0.0.253, 10.0.0.221
+13:34:18 ### Verifying STS startup environment
+13:34:18 Started at: 2015-06-15 20:34:18 UTC
+13:34:18 /usr/bin/gcc --version
+13:34:18 gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
+13:34:18 Copyright (C) 2011 Free Software Foundation, Inc.
+13:34:18 This is free software; see the source for copying conditions.  There is NO
+13:34:18 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+13:34:18 
+13:34:18 Compiler Name: gcc
+13:34:18 Compiler: gcc
+13:34:18 Looking for tests in: /home/qatest_local/repo/scenario
+13:34:18 Tests: stop_cim.pl
+13:34:18 Starting environment:
+13:34:18 ENV CCOMP=gcc
+13:34:18 ENV CCOMPFLAGS=-c
+13:34:18 ENV CCOMPTYPE=gcc
+13:34:18 ENV CCOMPVERSION=4.6.3
+13:34:18 ENV CC_DIALECT_FLAGS=-ansi|-std=c89|-std=c99|-std=c11|-std=gnu89|-std=gnu99|-std=gnu11
+13:34:18 ENV CIMAUTOMATION_JAR=/home/qatest_local/assets/cimautomation-harmony-SNAPSHOT.jar
+13:34:18 ENV CIM_SERVER=lin2
+13:34:18 ENV COVERITY_CONFIG=/tmp/stscovcfg.17807
+13:34:18 ENV COVERITY_DISABLE_SSL=1
+13:34:18 ENV CVSROOT=:pserver:luxoft@offshore.coverity.com:/home/coverity/qa-repository
+13:34:18 ENV CWINSPEC=gcc
+13:34:18 ENV CXXCOMP=g++
+13:34:18 ENV CXXCOMPFLAGS=-c
+13:34:18 ENV CXXCOMPTYPE=g++
+13:34:18 ENV CXXWINSPEC=g++
+13:34:18 ENV CXX_DIALECT_FLAGS=-std=c++98|-std=c++0x|-std=c++11|-std=c++1y|-std=gnu++98|-std=gnu++0x|-std=gnu++11|-std=gnu++1y|-std=c++14|-std=gnu++14
+13:34:18 ENV GCC_VERSION=4.6.3
+13:34:18 ENV HOME=/home/qatest_local
+13:34:18 ENV LANG=en_US.UTF-8
+13:34:18 ENV LESSCLOSE=/usr/bin/lesspipe %s %s
+13:34:18 ENV LESSOPEN=| /usr/bin/lesspipe %s
+13:34:18 ENV LOGNAME=qatest_local
+13:34:18 ENV LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:
+13:34:18 ENV MAIL=/var/mail/qatest_local
+13:34:18 ENV MAIN_CLASS=org.testng.TestNG
+13:34:18 ENV PATH=/usr/bin:/home/qatest_local/repo/sts/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games
+13:34:18 ENV PERLLIB=:/home/qatest_local/repo/sts/lib:/home/qatest_local/repo/scenario/lib:/home/qatest_local/repo/sts/lib:/home/qatest_local/repo/scenario/lib
+13:34:18 ENV PWD=/home/qatest_local/repo/scenario/tests/cim/performance/ws
+13:34:18 ENV RESPONSE_FILE_FLAG=@
+13:34:18 ENV SHELL=/bin/bash
+13:34:18 ENV SHLVL=3
+13:34:18 ENV SSH_CLIENT=172.16.10.10 36915 22
+13:34:18 ENV SSH_CONNECTION=172.16.10.10 36915 172.16.10.32 22
+13:34:18 ENV SSH_TTY=/dev/pts/2
+13:34:18 ENV STSSH=/bin/bash
+13:34:18 ENV STS_BUNZIP2=/bin/bunzip2
+13:34:18 ENV STS_CACHE=/home/qatest_local/.sts/cache
+13:34:18 ENV STS_CACHE_KITS=/home/qatest_local/.sts/cache/kits
+13:34:18 ENV STS_CACHE_LICENSES=/home/qatest_local/.sts/cache/licenses
+13:34:18 ENV STS_CACHE_PACKAGES=/home/qatest_local/.sts/cache/packages
+13:34:18 ENV STS_CACHE_QATOOLS=/home/qatest_local/.sts/cache/qatools
+13:34:18 ENV STS_COMPILER=gcc
+13:34:18 ENV STS_COMPILER_NAME=gcc
+13:34:18 ENV STS_COMPILER_TYPE=gcc
+13:34:18 ENV STS_COMPILER_VERSION=0
+13:34:18 ENV STS_COV_LICENSE_VERSION=carmel
+13:34:18 ENV STS_EMAIL_CLEANUP=
+13:34:18 ENV STS_KIT_TYPE=zip
+13:34:18 ENV STS_MAX_CACHE_MB=1024
+13:34:18 ENV STS_MAX_CACHE_MB_KITS=1024
+13:34:18 ENV STS_MAX_CACHE_MB_LICENSES=1024
+13:34:18 ENV STS_MAX_CACHE_MB_PACKAGES=1024
+13:34:18 ENV STS_RESULTS=/home/qatest_local/results/2015-06-15_133418
+13:34:18 ENV STS_REUSE_KITS=1
+13:34:18 ENV STS_ROOT=/home/qatest_local/repo/sts
+13:34:18 ENV STS_RUBY=/usr/bin/ruby
+13:34:18 ENV STS_RUN_NAME=
+13:34:18 ENV STS_TAR=/bin/tar
+13:34:18 ENV STS_TESTS=/home/qatest_local/repo/scenario
+13:34:18 ENV STS_USE_CIM_MANAGE=1
+13:34:18 ENV STY=5296.ws-test-running
+13:34:18 ENV TARGET_BRANCH=harmony
+13:34:18 ENV TERM=screen
+13:34:18 ENV TERMCAP=SC|screen|VT 100/ANSI X3.64 virtual terminal:\
+	:DO=\E[%dB:LE=\E[%dD:RI=\E[%dC:UP=\E[%dA:bs:bt=\E[Z:\
+	:cd=\E[J:ce=\E[K:cl=\E[H\E[J:cm=\E[%i%d;%dH:ct=\E[3g:\
+	:do=^J:nd=\E[C:pt:rc=\E8:rs=\Ec:sc=\E7:st=\EH:up=\EM:\
+	:le=^H:bl=^G:cr=^M:it#8:ho=\E[H:nw=\EE:ta=^I:is=\E)0:\
+	:li#50:co#180:am:xn:xv:LP:sr=\EM:al=\E[L:AL=\E[%dL:\
+	:cs=\E[%i%d;%dr:dl=\E[M:DL=\E[%dM:dc=\E[P:DC=\E[%dP:\
+	:im=\E[4h:ei=\E[4l:mi:IC=\E[%d@:ks=\E[?1h\E=:\
+	:ke=\E[?1l\E>:vi=\E[?25l:ve=\E[34h\E[?25h:vs=\E[34l:\
+	:ti=\E[?1049h:te=\E[?1049l:us=\E[4m:ue=\E[24m:so=\E[3m:\
+	:se=\E[23m:mb=\E[5m:md=\E[1m:mr=\E[7m:me=\E[m:ms:\
+	:Co#8:pa#64:AF=\E[3%dm:AB=\E[4%dm:op=\E[39;49m:AX:\
+	:vb=\Eg:G0:as=\E(0:ae=\E(B:\
+	:ac=\140\140aaffggjjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~..--++,,hhII00:\
+	:po=\E[5i:pf=\E[4i:k0=\E[10~:k1=\EOP:k2=\EOQ:k3=\EOR:\
+	:k4=\EOS:k5=\E[15~:k6=\E[17~:k7=\E[18~:k8=\E[19~:\
+	:k9=\E[20~:k;=\E[21~:F1=\E[23~:F2=\E[24~:F3=\E[1;2P:\
+	:F4=\E[1;2Q:F5=\E[1;2R:F6=\E[1;2S:F7=\E[15;2~:\
+	:F8=\E[17;2~:F9=\E[18;2~:FA=\E[19;2~:kb=:K2=\EOE:\
+	:kB=\E[Z:kF=\E[1;2B:kR=\E[1;2A:*4=\E[3;2~:*7=\E[1;2F:\
+	:#2=\E[1;2H:#3=\E[2;2~:#4=\E[1;2D:%c=\E[6;2~:%e=\E[5;2~:\
+	:%i=\E[1;2C:kh=\E[1~:@1=\E[1~:kH=\E[4~:@7=\E[4~:\
+	:kN=\E[6~:kP=\E[5~:kI=\E[2~:kD=\E[3~:ku=\EOA:kd=\EOB:\
+	:kr=\EOC:kl=\EOD:km:
+13:34:18 ENV TEST_NUMB=3
+13:34:18 ENV USER=qatest_local
+13:34:18 ENV WINDOW=1
+13:34:18 ENV XDG_SESSION_COOKIE=2ce4840335d7d5c8b6c215e8000002a8-1433349615.371358-1024300632
+13:34:18 ENV _=/home/qatest_local/repo/sts/bin/stsrun
+13:34:18 Started test: scenario/environment
+13:34:18 Start Time: 2015-06-15 20:34:18 UTC
+13:34:18 Host: load2
+13:34:19 uname: Linux load2 3.13.0-32-generic #57~precise1-Ubuntu SMP Tue Jul 15 03:51:20 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+13:34:19 Directory: /home/qatest_local/results/2015-06-15_133418/scenario/environment
+13:34:19 Directory: /home/qatest_local/results/2015-06-15_133418/scenario/environment
+13:34:19 Test: scenario/environment
+13:34:19 Test file: /home/qatest_local/repo/scenario/tests/scenario/environment/sts.pl
+13:34:19 Test Version: unknown
+13:34:19 ENV CCOMP=gcc
+13:34:19 ENV CCOMPFLAGS=-c
+13:34:19 ENV CCOMPTYPE=gcc
+13:34:19 ENV CCOMPVERSION=4.6.3
+13:34:19 ENV CC_DIALECT_FLAGS=-ansi|-std=c89|-std=c99|-std=c11|-std=gnu89|-std=gnu99|-std=gnu11
+13:34:19 ENV COVERITY_CONFIG=/tmp/stscovcfg.17807
+13:34:19 ENV COVERITY_DISABLE_SSL=1
+13:34:19 ENV CURRENT_TEST=scenario/environment
+13:34:19 ENV CVSROOT=:pserver:luxoft@offshore.coverity.com:/home/coverity/qa-repository
+13:34:19 ENV CWINSPEC=gcc
+13:34:19 ENV CXXCOMP=g++
+13:34:19 ENV CXXCOMPFLAGS=-c
+13:34:19 ENV CXXCOMPTYPE=g++
+13:34:19 ENV CXXWINSPEC=g++
+13:34:19 ENV CXX_DIALECT_FLAGS=-std=c++98|-std=c++0x|-std=c++11|-std=c++1y|-std=gnu++98|-std=gnu++0x|-std=gnu++11|-std=gnu++1y|-std=c++14|-std=gnu++14
+13:34:19 ENV GCC_VERSION=4.6.3
+13:34:19 ENV PATH=/usr/bin:/home/qatest_local/repo/sts/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games
+13:34:19 ENV RESPONSE_FILE_FLAG=@
+13:34:19 ENV STSSH=/bin/bash
+13:34:19 ENV STS_BUNZIP2=/bin/bunzip2
+13:34:19 ENV STS_CACHE=/home/qatest_local/.sts/cache
+13:34:19 ENV STS_CACHE_KITS=/home/qatest_local/.sts/cache/kits
+13:34:19 ENV STS_CACHE_LICENSES=/home/qatest_local/.sts/cache/licenses
+13:34:19 ENV STS_CACHE_PACKAGES=/home/qatest_local/.sts/cache/packages
+13:34:19 ENV STS_CACHE_QATOOLS=/home/qatest_local/.sts/cache/qatools
+13:34:19 ENV STS_COMPILER=gcc
+13:34:19 ENV STS_COMPILER_NAME=gcc
+13:34:19 ENV STS_COMPILER_TYPE=gcc
+13:34:19 ENV STS_COMPILER_VERSION=0
+13:34:19 ENV STS_COV_LICENSE_VERSION=carmel
+13:34:19 ENV STS_EMAIL_CLEANUP=
+13:34:19 ENV STS_INSTALL_DIR=/tmp/stskits.17807
+13:34:19 ENV STS_KIT_TYPE=zip
+13:34:19 ENV STS_MAX_CACHE_MB=1024
+13:34:19 ENV STS_MAX_CACHE_MB_KITS=1024
+13:34:19 ENV STS_MAX_CACHE_MB_LICENSES=1024
+13:34:19 ENV STS_MAX_CACHE_MB_PACKAGES=1024
+13:34:19 ENV STS_RESULTS=/home/qatest_local/results/2015-06-15_133418
+13:34:19 ENV STS_REUSE_KITS=1
+13:34:19 ENV STS_ROOT=/home/qatest_local/repo/sts
+13:34:19 ENV STS_RUBY=/usr/bin/ruby
+13:34:19 ENV STS_RUN_NAME=
+13:34:19 ENV STS_TAR=/bin/tar
+13:34:19 ENV STS_TEST_SOURCE_DIR=/home/qatest_local/repo/scenario/tests/scenario/environment
+13:34:19 ENV STS_USE_CIM_MANAGE=1
+13:34:19 Description: Verify Scenario environment is complete and valid
+13:34:19 # Checking for gmake 3.81+ (set SKIP_GMAKE_TEST to disable)
+13:34:19 ### Expecting success
+13:34:19 make --version
+13:34:19 GNU Make 3.81
+13:34:19 Copyright (C) 2006  Free Software Foundation, Inc.
+13:34:19 This is free software; see the source for copying conditions.
+13:34:19 There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+13:34:19 PARTICULAR PURPOSE.
+13:34:19 
+13:34:19 This program built for x86_64-pc-linux-gnu
+13:34:19 ### Expecting success
+13:34:19 dpkg --list lsb | egrep -q "^ii +lsb +"
+13:34:19 SKIPPED: On success, do not count toward passing results
+13:34:19 End Time: 2015-06-15 20:34:19 UTC
+13:34:19 Duration: 00:01
+13:34:19 SKIPPED: On success, do not count toward passing results
+scenario/environment ................................................. skipped
+SKIPPED: On success, do not count toward passing results
+
+13:34:19 End Time: 2015-06-15 20:34:19 UTC
+13:34:19 Duration: 00:00
+13:34:19 NOTFOUND: stop_cim.pl at /home/qatest_local/repo/sts/bin/../lib/STS/Flow.pm line 505.
+stop_cim.pl .......................................................... not found
+13:34:19 ### Removing old /home/qatest_local/results/2015-06-15_133418/scenario/environment
+13:34:19 Started test: scenario/environment
+13:34:19 Start Time: 2015-06-15 20:34:19 UTC
+13:34:19 Host: load2
+13:34:19 uname: Linux load2 3.13.0-32-generic #57~precise1-Ubuntu SMP Tue Jul 15 03:51:20 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+13:34:19 Directory: /home/qatest_local/results/2015-06-15_133418/scenario/environment
+13:34:19 Directory: /home/qatest_local/results/2015-06-15_133418/scenario/environment
+13:34:19 Test: scenario/environment
+13:34:19 Test file: /home/qatest_local/repo/scenario/tests/scenario/environment/sts.pl
+13:34:19 Test Version: unknown
+13:34:19 ENV CCOMP=gcc
+13:34:19 ENV CCOMPFLAGS=-c
+13:34:19 ENV CCOMPTYPE=gcc
+13:34:19 ENV CCOMPVERSION=4.6.3
+13:34:19 ENV CC_DIALECT_FLAGS=-ansi|-std=c89|-std=c99|-std=c11|-std=gnu89|-std=gnu99|-std=gnu11
+13:34:19 ENV COVERITY_CONFIG=/tmp/stscovcfg.17807
+13:34:19 ENV COVERITY_DISABLE_SSL=1
+13:34:19 ENV CURRENT_TEST=scenario/environment
+13:34:19 ENV CVSROOT=:pserver:luxoft@offshore.coverity.com:/home/coverity/qa-repository
+13:34:19 ENV CWINSPEC=gcc
+13:34:19 ENV CXXCOMP=g++
+13:34:19 ENV CXXCOMPFLAGS=-c
+13:34:19 ENV CXXCOMPTYPE=g++
+13:34:19 ENV CXXWINSPEC=g++
+13:34:19 ENV CXX_DIALECT_FLAGS=-std=c++98|-std=c++0x|-std=c++11|-std=c++1y|-std=gnu++98|-std=gnu++0x|-std=gnu++11|-std=gnu++1y|-std=c++14|-std=gnu++14
+13:34:19 ENV GCC_VERSION=4.6.3
+13:34:19 ENV PATH=/usr/bin:/home/qatest_local/repo/sts/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/sbin:/bin:/usr/games
+13:34:19 ENV RESPONSE_FILE_FLAG=@
+13:34:19 ENV STSSH=/bin/bash
+13:34:19 ENV STS_BUNZIP2=/bin/bunzip2
+13:34:19 ENV STS_CACHE=/home/qatest_local/.sts/cache
+13:34:19 ENV STS_CACHE_KITS=/home/qatest_local/.sts/cache/kits
+13:34:19 ENV STS_CACHE_LICENSES=/home/qatest_local/.sts/cache/licenses
+13:34:19 ENV STS_CACHE_PACKAGES=/home/qatest_local/.sts/cache/packages
+13:34:19 ENV STS_CACHE_QATOOLS=/home/qatest_local/.sts/cache/qatools
+13:34:19 ENV STS_COMPILER=gcc
+13:34:19 ENV STS_COMPILER_NAME=gcc
+13:34:19 ENV STS_COMPILER_TYPE=gcc
+13:34:19 ENV STS_COMPILER_VERSION=0
+13:34:19 ENV STS_COV_LICENSE_VERSION=carmel
+13:34:19 ENV STS_EMAIL_CLEANUP=
+13:34:19 ENV STS_INSTALL_DIR=/tmp/stskits.17807
+13:34:19 ENV STS_KIT_TYPE=zip
+13:34:19 ENV STS_MAX_CACHE_MB=1024
+13:34:19 ENV STS_MAX_CACHE_MB_KITS=1024
+13:34:19 ENV STS_MAX_CACHE_MB_LICENSES=1024
+13:34:19 ENV STS_MAX_CACHE_MB_PACKAGES=1024
+13:34:19 ENV STS_RESULTS=/home/qatest_local/results/2015-06-15_133418
+13:34:19 ENV STS_REUSE_KITS=1
+13:34:19 ENV STS_ROOT=/home/qatest_local/repo/sts
+13:34:19 ENV STS_RUBY=/usr/bin/ruby
+13:34:19 ENV STS_RUN_NAME=
+13:34:19 ENV STS_TAR=/bin/tar
+13:34:19 ENV STS_TEST_SOURCE_DIR=/home/qatest_local/repo/scenario/tests/scenario/environment
+13:34:19 ENV STS_USE_CIM_MANAGE=1
+13:34:19 Description: Verify Scenario environment is complete and valid
+13:34:19 # Checking for gmake 3.81+ (set SKIP_GMAKE_TEST to disable)
+13:34:19 ### Expecting success
+13:34:19 make --version
+13:34:19 GNU Make 3.81
+13:34:19 Copyright (C) 2006  Free Software Foundation, Inc.
+13:34:19 This is free software; see the source for copying conditions.
+13:34:19 There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+13:34:19 PARTICULAR PURPOSE.
+13:34:19 
+13:34:19 This program built for x86_64-pc-linux-gnu
+13:34:19 ### Expecting success
+13:34:19 dpkg --list lsb | egrep -q "^ii +lsb +"
+13:34:19 SKIPPED: On success, do not count toward passing results
+13:34:19 End Time: 2015-06-15 20:34:19 UTC
+13:34:19 Duration: 00:00
+13:34:19 SKIPPED: On success, do not count toward passing results
+scenario/environment ................................................. skipped
+SKIPPED: On success, do not count toward passing results
+
+13:34:19 ### Verifying STS shutdown environment
+13:34:19 0 tests ran, 0 passed (0.0%), 0 failed (0.0%), 2 skipped, 1 exceptional
+0 tests ran, 0 passed (0.0%), 0 failed (0.0%), 2 skipped, 1 exceptional
+13:34:19 Finished at: 2015-06-15 20:34:19 UTC
+END OF TEST: ./scale_get_merged_defects_for_project_scope

@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "load_machine" : "regexp(1)=\\[Gelato\\] CIM_SERVER: (.+)",
+    "sut_machine" : "regexp(1)=\\[Gelato\\] LOAD_SERVER: (.+)",
+    "start_time" : "regexp(1)=Start Time: (.+)",
+    "test_name" : "regexp(1)=Test: (.+)",
+    "branch" : "regexp(1)=\\[Gelato\\] SCENARIO_BRANCH: (.+)",
+    "analysis" : "regexp(1)=Scenario Analysis version '(.+)'"
+  },
+
+
+  "flavours" : {
+    "scale" : {
+      "identifiers" : {
+        "login" : "regexp(1)=-DURATION-  \\[took (\\d+)ms @.+Log into CIM",
+        "open_window" : "regexp(1)=-DURATION-  \\[took (\\d+)ms @.+Open the.+ window",
+				"open_tab" : "regexp(1)=-DURATION-  \\[took (\\d+)ms @.+Open the.+ tab"
+      },
+
+      "triggers" : {
+        "close": "regexp(1)=-DURATION-  \\[took (\\d+)ms @.+Close the.+ window"
+      }
+    }
+  }
+}

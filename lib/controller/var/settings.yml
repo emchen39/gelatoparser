@@ -1,0 +1,7 @@
+---
+pg_set: true
+pg_host: some_host
+pg_user: postgres
+pg_port: '5432'
+pg_password: ''
+pg_dbname: perflab

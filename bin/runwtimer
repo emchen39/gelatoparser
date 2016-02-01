@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/timer/run_with_timer'
+
+command = ARGV[0]
+path = ARGV[1]
+
+RunWithTimer.capture_with_timer(command, path)

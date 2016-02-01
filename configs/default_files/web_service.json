@@ -1,0 +1,26 @@
+{
+	"metadata": {
+    "load_machine" : "regexp(1)=\\[Gelato\\] CIM_SERVER: (.+)",
+    "sut_machine" : "regexp(1)=\\[Gelato\\] LOAD_SERVER: (.+)",
+    "start_time" : "regexp(1)=Start Time: (.+)",
+    "test_name" : "regexp(1)=Test: (.+)",
+    "branch" : "regexp(1)=\\[Gelato\\] SCENARIO_BRANCH: (.+)",
+    "analysis" : "regexp(1)=Scenario Analysis version '(.+)'"  
+  },
+
+	"flavours" : {
+		"web_service" : {
+			"identifiers" : {
+				"filter" : "regexp(1)=Starting .+ with (.+) \\.\\.\\.",
+				"scope" : "regexp(1)=scope of : (.+)",
+				"page_size" : "regexp(1)=with page size of : (\\d+)",
+				"count" : "regexp(1)=\\[count=(\\d+)\\]",
+				"returned" : "regexp(1)=Total .+ returned : (\\d+)"
+			},
+
+			"triggers" : {
+				"duration": "regexp(1)=-DURATION-  \\[took (\\d+)"
+			}
+		}	
+	}
+}

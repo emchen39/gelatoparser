@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "load_machine" : "regexp(1)=\\[Gelato\\] CIM_SERVER: (.+)",
+    "sut_machine" : "regexp(1)=\\[Gelato\\] LOAD_SERVER: (.+)",
+    "start_time" : "regexp(1)=Start Time: (.+)",
+    "test_name" : "regexp(1)=Test: (.+)",
+    "branch" : "regexp(1)=\\[Gelato\\] SCENARIO_BRANCH: (.+)",
+    "analysis" : "regexp(1)=Scenario Analysis version '(.+)'",
+    "database" : "cimpop_etl_complete_with_linux"
+  },
+
+
+  "flavours" : {
+    "steps_and_duration" :{
+      "identifiers" : {
+        "step" : "regexp(1)=@ STEP.+\\] (.+)\\.",
+        "description" : "regexp(1)=-DURATION-.+Finished: (.+)"
+      },
+
+      "triggers" : {
+        "duration" : "regexp(1)=-DURATION- +\\[took (\\d+)ms @"
+      }
+    }
+  }
+}

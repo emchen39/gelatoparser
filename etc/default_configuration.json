@@ -1,0 +1,26 @@
+{
+	"inputs": ["<INPUT FILES>"],
+
+	"metadata": {
+		"<NAME>": "<regexp(<INT>)=SOME PATTERN|or|SOME STRING LITERAL",
+		"<MORE>": "<regexp(<INT>)=SOME PATTERN|or|SOME STRING LITERAL>"
+	},
+	
+
+	"flavours": {
+		"<SECTION NAME>" : {
+			"identifiers" : {
+				"<NAME>": "<regexp(<INT>)=SOME OTHER PATTERN|or|regexp(<INT>)=SOME OTHER PATTERN|or|...>",
+				"<MORE>": "<regexp(<INT>)=SOME OTHER PATTERN|or|regexp(<INT>)=SOME OTHER PATTERN|or|...>"
+			},
+		
+			"triggers":	{
+				"<NAME>": "<regexp(<INT>)=SOME OTHER PATTERN|or|regexp(<INT>)=SOME OTHER PATTERN|or|...>"
+			}
+		}
+	},
+
+	"output": "<OUTPUT FILE PATH>",
+	"format": ["csv", "json"]
+}
+

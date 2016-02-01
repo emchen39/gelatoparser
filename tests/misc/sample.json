@@ -1,0 +1,27 @@
+{
+	"inputs" : ["/Users/emmac/PerfLab/results/ws/results/harmony_run1/scale_get_merged_defects_for_project_scope.log", 
+	"/Users/emmac/PerfLab/results/ws/results/harmony_run2/scale_get_merged_defects_for_project_scope.log"],
+	
+	"metadata" :
+	{"test name": "Concurrent Commit",
+	"date ran": "regexp(1)=Start Time: (.+) UTC",
+	"machines": "lin5/load5"
+	},
+	
+	"identifiers" :
+	{
+	"scope": "regexp(1)=Starting getMergedDefectsForProjectScope with (.+)\\.\\.\\.",
+	"page size": "regexp(1)=with page size of : ([[:digit:]]+)",
+	"count": "regexp(1)=count=(.+)\\]"
+	},
+
+	"triggers":
+	{"duration": "regexp(1)=DURATION- +\\[took (.+?)ms"},
+
+	"outputs" :
+	{
+	"location": "/Users/emmac/gelatoResults",
+	"formats": ["csv", "json"]
+	}
+}
+
