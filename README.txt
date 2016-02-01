@@ -2,21 +2,29 @@ Project Structure
 
 Gelato
 	|--bin/
-	|	|--gelato
+	|	|--gparse
+	|	|--gctrl
 	|--lib/
-	|	|--gelato/
+	|	|--parser/
 	|	|	|--exceptions/
 	|	|	|	|--gelato_exceptions.rb
 	|	|	|--operators/
 	|	|	|	|--output_factory.rb
 	|	|	|	|--file_operator.rb
 	|	|	|	|--regexp_operator.rb
+	|	|	|	|--logger_operator.rb
+	|	|	|	|--timestampe_operator.rb
 	|	|	|--configuration.rb
-	|	|	|--container.rb
+	|	|	|--data_storage.rb
 	|	|	|--pattern.rb
-	|	|	|--holder.rb
-	|	|	|--gelato.rb
-	|	|	|--main.rb
+	|	|	|--flavour.rb
+	|	|	|--file_parser.rb
+	|	|	|--input_file.rb
+	| | |--main.rb
+	| | |--opt_parser.rb
+	| | |--pattern.rb
+	|	|--controller/
+	|	|	|--IGNORE THIS DIRECTORY FOR NOW
 	|--test/
 	|	|--misc/
 	|	|--test_commandline_args.rb
@@ -25,8 +33,10 @@ Gelato
 	|	|--test_container,rb
 	|	|--test_flavours.rb
 	|	|--test_input_string_or_regexp.rb
-	|--ext/
+	|--etc/
 	|	|--default_configuration.json
+	|--configs/
+	|	|--EXAMPLE CONFIGURATION FILES
 
 
 
