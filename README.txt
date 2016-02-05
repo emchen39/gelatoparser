@@ -1,43 +1,3 @@
-Project Structure
-
-Gelato
-	|--bin/
-	|	|--gparse
-	|	|--gctrl
-	|--lib/
-	|	|--parser/
-	|	|	|--exceptions/
-	|	|	|	|--gelato_exceptions.rb
-	|	|	|--operators/
-	|	|	|	|--output_factory.rb
-	|	|	|	|--file_operator.rb
-	|	|	|	|--regexp_operator.rb
-	|	|	|	|--logger_operator.rb
-	|	|	|	|--timestamp_operator.rb
-	|	|	|--configuration.rb
-	|	|	|--data_storage.rb
-	|	|	|--pattern.rb
-	|	|	|--flavour.rb
-	|	|	|--file_parser.rb
-	|	|	|--input_file.rb
-	|	|	|--main.rb
-	|	|	|--opt_parser.rb
-	|	|	|--pattern.rb
-	|	|--controller/
-	|	|	|--IGNORE THIS DIRECTORY FOR NOW
-	|--test/
-	|	|--misc/
-	|	|--test_commandline_args.rb
-	|	|--test_configuration_process.rb
-	|	|--test_output_format.rb
-	|	|--test_container,rb
-	|	|--test_flavours.rb
-	|	|--test_input_string_or_regexp.rb
-	|--etc/
-	|	|--default_configuration.json
-	|--configs/
-	|	|--EXAMPLE CONFIGURATION FILES
-
 0. Introduction:
 
 gparse is a tool that allows your to parse any text or log file by providing a .json format configuration file telling the program what to look for. By default, the parsed results are in .json and .csv format stored in your home directory. This tool makes data collection from tests outputs, system logs, etc easy and can be effortlessly integrated into your automation framework.
@@ -91,3 +51,7 @@ In your configuration files, the regex follows the ruby regex ruls except that a
 
 If the file you are interested in parsing is timestamped on every line (like any log files), you may be interested in knowing the elapsed time of each event (a line in the file). gparse handles converting timestamp into epoch and calculating the duration with the option --get-elapsed FORMAT. If you have this option specified, then gparse adds [elapsed DURATION] in front of each line of the file when you are parsing. Hence, you may include an identifier or trigger that parses for the DURATION from each line. Examples may be found in some of the configuration files under <INSTALL_PATH>/configs/default_files
 
+
+5. Inserting data into database:
+
+This feature is still under development. It is intended to send your parsed data into a database.
