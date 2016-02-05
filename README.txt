@@ -54,29 +54,29 @@ Set your system to include <INSTALL_PATH>/bin into your system PATH, now you can
 
 gparse needs a .json format configuration file in order to know what you want to parse from a file. Here's a template of what a configuration file might look like:
 {
-        "inputs": ["<INPUT FILES>"],
+  "inputs": ["<INPUT FILES>"],
 
-        "metadata": {
-                "<NAME>": "<regexp(<INT>)=SOME PATTERN|or|SOME STRING LITERAL",
-                "<MORE>": "<regexp(<INT>)=SOME PATTERN|or|SOME STRING LITERAL>"
-        },
+  "metadata": {
+    "<NAME>": "<regexp(<INT>)=SOME PATTERN|or|SOME STRING LITERAL",
+    "<MORE>": "<regexp(<INT>)=SOME PATTERN|or|SOME STRING LITERAL>"
+  },
 
 
-        "flavours": {
-                "<SECTION NAME>" : {
-                        "identifiers" : {
-                                "<NAME>": "<regexp(<INT>)=SOME OTHER PATTERN|or|regexp(<INT>)=SOME OTHER PATTERN|or|...>",
-                                "<MORE>": "<regexp(<INT>)=SOME OTHER PATTERN|or|regexp(<INT>)=SOME OTHER PATTERN|or|...>"
-                        },
+  "flavours": {
+     "<SECTION NAME>" : {
+       "identifiers" : {
+         "<NAME>": "<regexp(<INT>)=SOME OTHER PATTERN|or|regexp(<INT>)=SOME OTHER PATTERN|or|...>",
+         "<MORE>": "<regexp(<INT>)=SOME OTHER PATTERN|or|regexp(<INT>)=SOME OTHER PATTERN|or|...>"
+       },
 
-                        "triggers":     {
-                                "<NAME>": "<regexp(<INT>)=SOME OTHER PATTERN|or|regexp(<INT>)=SOME OTHER PATTERN|or|...>"
-                        }
-                }
-        },
+       "triggers": {
+         "<NAME>": "<regexp(<INT>)=SOME OTHER PATTERN|or|regexp(<INT>)=SOME OTHER PATTERN|or|...>"
+       }
+     }
+   },
 
-        "output": "<OUTPUT FILE PATH>",
-        "format": ["csv", "json"]
+   "output": "<OUTPUT FILE PATH>",
+   "format": ["csv", "json"]
 }
 
 You may also find working examples of configuration files under <INSTALL_PATH>/configs/default_files
