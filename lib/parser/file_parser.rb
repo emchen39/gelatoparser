@@ -85,10 +85,15 @@ class FileParser
 
   def output_file(file)
     epoch = DateTime.now.strftime('%Q')
-    file.data_store.keys.each do |flavour_name|
-      @configuration.output_formats.each do |format|
-        OutputOperator.output(format, @configuration.output_location, file, flavour_name, epoch)
-      end
+		
+		file.get_flavour_list.each do |flavour_name|
+			if file.is_flavour_empty?(flavour_name) then
+				LoggerOperator.warn("No data parsed for flavour: '#{flavour_name}' from file: '#{file.filename}', perhaps use a different configuration file?")
+			else
+	 			@configuration.output_formats.each do |format|
+        	OutputOperator.output(format, @configuration.output_location, file, flavour_name, epoch)
+				end
+			end
     end
   end
 
